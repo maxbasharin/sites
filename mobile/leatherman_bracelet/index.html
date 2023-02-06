@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>Браслет – Мультитул</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/lt_landing_valid_form.js"></script>
+    <script type="text/javascript" src="js/lt_landing_script.js"></script>
+    <script type="text/javascript">
+      $jsonData = {
+        RU: {
+          currency: "\u0440.",
+          productsum: 12980,
+          oldproductsum: 2490,
+          delivery: 0,
+          totalsum: "1290",
+        },
+      };
+    </script>
+
+    <style>
+      .ajax_loader {
+        display: none;
+      }
+
+      .form-btn {
+        animation: pulse 1s infinite;
+      }
+      .form-btn:hover {
+        animation: none;
+      }
+
+      @-webkit-keyframes pulse {
+        0% {
+          -webkit-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0.7);
+        }
+        70% {
+          -webkit-box-shadow: 0 0 0 10px rgba(255, 114, 0, 0);
+        }
+        100% {
+          -webkit-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0);
+        }
+      }
+      @keyframes pulse {
+        0% {
+          -moz-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0.7);
+          box-shadow: 0 0 0 0 rgba(255, 114, 0, 0.7);
+        }
+        70% {
+          -moz-box-shadow: 0 0 0 10px rgba(255, 114, 0, 0);
+          box-shadow: 0 0 0 10px rgba(255, 114, 0, 0);
+        }
+        100% {
+          -moz-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0);
+          box-shadow: 0 0 0 0 rgba(255, 114, 0, 0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="s1">
+        <div class="s1-title">
+          <p class="s1-title-top">Браслет – Мультитул</p>
+          <h1>leatherman tread</h1>
+        </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-list-1.png" alt="" />
+            <p>29 функций в 1!</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-2.png" alt="" />
+            <p>Стильный мужской аксессуар</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-3.png" alt="" />
+            <p>25 лет гарантии</p>
+          </div>
+        </div>
+
+        <div class="s1-block">
+          <img src="img/icon-hot.png" alt="" />
+          <span
+            >Хит <br />
+            продаж!</span
+          >
+        </div>
+
+        <div class="discount">
+          <div class="discount-top">-50%</div>
+          <div class="discount-bottom">
+            Ваша скидка: <br /><span>2670р.</span>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <div class="timer">
+            <div class="timer-title">Предложение действует:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="price">
+              <div class="price-old">
+                <div>Обычная цена:</div>
+                <div class="price-old-val oldproductsum"></div>
+              </div>
+              <div class="price-new">
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+            <form action="#" method="post" class="orderformcdn">
+
+              <div class="reolader form-item">
+                <a href="#form"
+              
+                  class="form-btn mm_button"
+                 
+                >
+                  Сделать заказ
+              </a>
+              
+              </div>
+              <div class="form-count">
+                *количество товара по акции <span>ограничено!</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="s2">
+        <img class="gif" src="gif/1.gif" alt="" />
+        <h2 class="color-blue">
+          Leatherman <span class="color-orange">Tread</span>
+        </h2>
+
+        <div class="s2-item">
+          <img src="img/s2.png" alt="" />
+          <p>
+            <b>Мультитул Leatherman – уникальный в своем роде гаджет,</b>
+            сочетающий в себе набор из 29 инструментов, стильный внешний вид и
+            удобство, что не оставит равнодушным настоящего мужчину!
+          </p>
+        </div>
+      </section>
+      <section class="s3">
+        <div class="container">
+          <h2>Функциональность</h2>
+
+          <div class="s3-item">
+            <div class="s3-item-list">
+              <p>
+                <b>Все нужные инструменты у Вас на руке!</b> Теперь Вы всегда во
+                всеоружии, где бы Вы ни находились!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s4">
+        <div class="s4-item">
+          <div class="s4-item-list">
+            <img src="img/s4-1.png" alt="" />
+            <div class="s4-text-block">Дома</div>
+          </div>
+          <div class="s4-item-list">
+            <img src="img/s4-2.png" alt="" />
+            <div class="s4-text-block">На даче</div>
+          </div>
+          <div class="s4-item-list">
+            <img src="img/s4-3.png" alt="" />
+            <div class="s4-text-block">В гостях</div>
+          </div>
+          <div class="s4-item-list">
+            <img src="img/s4-4.png" alt="" />
+            <div class="s4-text-block">На работе</div>
+          </div>
+          <div class="s4-item-list">
+            <img src="img/s4-5.png" alt="" />
+            <div class="s4-text-block">В поездке</div>
+          </div>
+          <div class="s4-item-list">
+            <img src="img/s4-6.png" alt="" />
+            <div class="s4-text-block">В путешествии</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s5">
+        <div class="s5-item">
+          <h2>Leatherman Tread</h2>
+          <div class="s5-text">
+            одобрен управлением транспортной безопасности, так что можете смело
+            брать его на самолет!
+          </div>
+        </div>
+      </section>
+
+      <section class="s6">
+        <div class="container">
+          <h2>Надежность</h2>
+
+          <div class="s6-item">
+            <div class="s6-item-list">
+              <p>
+                Браслет выполнен из высоколегированной стали 17-4PH с
+                алмазоподобным DLC - покрытием, не боится воды и обеспечивает
+                максимальную устойчивость к коррозии и механическим
+                повреждениям.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s7">
+        <div class="container">
+          <div class="s7-item">
+            <div class="s7-text">25 лет - гарантия от производителя!</div>
+          </div>
+          <div class="reolader form-item">
+            <a href="#form" class="form-btn"> Заказать сейчас </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="s8">
+        <div class="s8-slider">
+          <img src="img/s8-1.jpg" alt="" />
+          <img src="img/s8-2.jpg" alt="" />
+          <img src="img/s8-3.jpg" alt="" />
+          <img src="img/s8-4.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="s9">
+        <div class="container">
+          <h2>Простота и <br /><span class="color-orange"> удобство</span></h2>
+          <div class="s9-item">
+            <div class="s9-item-list">
+              <img src="gif/2.gif" alt="" />
+              <div class="s9-item-text">
+                Все звенья снимаются и одеваются при помощи обычной монетки, что
+                позволяет отрегулировать размер браслета под ваше запястье и
+                оставить только те инструменты, которые Вам необходимы.
+              </div>
+            </div>
+            <div class="s9-item-list">
+              <img src="img/s9.jpg" alt="" />
+              <div class="s9-item-text">
+                Накидные ключи встроены в плоскость сегментов. А отвертки и
+                прочий инструмент убираются в специальные пазы. Все выступающие
+                инструменты специально изогнуты внутрь, чтобы избежать зацепов и
+                неудобств при носке.
+              </div>
+            </div>
+            <div class="s9-item-list">
+              <img src="gif/3.gif" alt="" />
+              <div class="s9-item-text">
+                Во время применения сам браслет используется, как рычаг, и
+                заменяет полноценную отвертку или ключ! В случае необходимости,
+                вы можете расстегнуть застежку и удлинить его.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="s10">
+        <img src="img/s10-bg.jpg" alt="" />
+        <h2>Посмотрите <span class="color-orange">видео!</span></h2>
+        <iframe
+          width="480"
+          height="270"
+          src="https://www.youtube.com/embed/v4Rl_i1KWc0?start=7"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="s10-item">
+          <p class="color-orange">Leatherman Tread</p>
+          <p>
+            пригодится каждому мужчине на работе, в домашних делах и в поездках!
+          </p>
+        </div>
+        <div class="reolader form-item">
+          <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+        </div>
+      </section> -->
+
+      <section class="s11">
+        <div class="container">
+          <img src="img/s11-1.png" alt="" />
+          <h2>Инструменты:</h2>
+          <ul class="list">
+            <li>1, 2, 3 - крестовые отвёртки (Phillips) #1, #2, #1-2</li>
+            <li>
+              4, 5, 6, 7, 8 - плоские отвёртки 3/32", 1/8", 3/16", 1/4", 5/16"
+            </li>
+            <li>
+              9, 10, 11, 12 - шестигранники (Hex Drive) метрические 3, 4, 5 и 6
+              мм
+            </li>
+            <li>
+              13, 14, 15, 16 - шестигранники (Hex Drive) дюймовые 3/32", 1/8",
+              3/16", 1/4"
+            </li>
+            <li>
+              17, 18, 19 - накидные гаечные ключи метрические 6, 8 и 10 мм
+            </li>
+            <li>
+              20, 21, 22 - накидные гаечные ключи дюймовые 3/16", 1/4", 3/8"
+            </li>
+            <li>23 - гаечный ключ для кислородного баллона</li>
+            <li>24 - инструмент для разбивания стекла</li>
+            <li>
+              25 - инструмент для вынимания сим-карты (или, например, для
+              нажатия скрытой кнопки сброса на телефоне)
+            </li>
+            <li>
+              26 - режущий крюк, который хорошо поможет перерезать шнурки,
+              вскрыть скотч и подобное (бумагу тоже режет отлично, проверено)
+            </li>
+            <li>27 - открывалка для крышек</li>
+            <li>28 - квадратная отвёртка №2</li>
+            <li>
+              29 - адаптер на 1/4" с шариковым фиксатором, который зажимает либо
+              застежку браслета, либо дополнительную насадку
+            </li>
+          </ul>
+        </div>
+        <img src="img/s11-bg.jpg" alt="" />
+      </section>
+
+      <section class="s12">
+      
+        <div class="container">
+          <h2>Характеристики <span class="color-orange">Браслета</span></h2>
+          <img class="s12-img" src="img/s12-1.png" alt="" />
+        </div>
+
+        <div class="s12-list">
+          <table cellpadding="5">
+            <tr>
+              <td colspan="2"><b>Количество функций:</b> 29</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Вес: </b> 168 г.</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Ширина браслета: </b> 3 см</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Длина браслета: </b> 21,7 см</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b> Сталь:</b> прочная нержавеющая марки 17-4</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Цвет:</b> черный, серый</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Производство:</b> США</td>
+            </tr>
+          </table>
+        </div>
+        <div class="s12-footer">
+          <img class="s12-img-footer" src="img/s12-2.png" alt="" />
+        </div>
+      </section>
+
+      <section class="s13">
+        <div class="s13-block">
+          <div class="s13-text">
+            <div class="s13-title">
+              К сожалению, в связи с высоким спросом на браслеты - мультитулы,
+              мы вынуждены ввести ограничение:
+            </div>
+            <div class="s13-limit">
+              <span>не более 2 штук в 1 руки!</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <div class="timer">
+            <div class="timer-title">Предложение действует:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="price">
+              <div class="price-old">
+                <div>Обычная цена:</div>
+                <div class="price-old-val oldproductsum"></div>
+              </div>
+              <div class="price-new">
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reolader form-item">
+            <a href="#form" class="form-btn"> Заказать сейчас </a>
+
+            <div class="form-count">
+              *количество товара по акции
+              <span>ограниченно!</span>
+            </div>
+          </div>
+        </div>
+        <img class="s13-img-footer" src="img/s13-bg.jpg" alt="" />
+      </section>
+
+      <section class="s14">
+        <h2>Отзывы <br /><span class="color-orange">покупателей</span></h2>
+
+        <div class="s14__slider">
+          <div class="s14-block white-block">
+            <img class="s14-img" src="img/s14-1.jpg" alt="" />
+
+            <div class="block-name">
+              <img src="img/icon-human.png" alt="" />
+              <div class="name">
+                <p><b>Виктор, 41 год</b></p>
+              </div>
+            </div>
+            <p class="s14-text">
+              Работаю прорабом уже несколько лет. Занимаемся строительством,
+              отделкой. Сам уже руками ничего не делаю, контролирую объекты. А
+              сумку с инструментом все равно таскал, мало ли где-что подкрутить,
+              разобрать, заказчику показать, ну и прочие мелочи. Вот, жена на
+              годовщину подарила Ваш браслет. Черный. Мне сразу понравился,
+              пришелся по руке, стал носить. И, знаете, через месяц я инструмент
+              из багажника достал и больше с собой не возил. Очень
+              функциональная вещь. Все основные крепежи он крутит. Довольно
+              удобный, надежный. Сколько раз бывал в пыли, сырости, бил его по
+              случайности, никаких следов не осталось. Полноценный инструмент он
+              конечно не заменяет, но, как подспорье, в походных, так сказать,
+              условиях - очень даже. И выглядит солидно. Могу смело
+              рекомендовать.
+            </p>
+          </div>
+          <div class="s14-block white-block">
+            <img class="s14-img" src="img/s14-2.jpg" alt="" />
+
+            <div class="block-name">
+              <img src="img/icon-human.png" alt="" />
+              <div class="name">
+                <p><b>Сергей, 35 лет</b></p>
+              </div>
+            </div>
+            <p class="s14-text">
+              Подарили на день рождения коллеги браслет. Знают, что я люблю
+              всякие гаджеты, мультитулы, да и с Leatherman, разумеется давно
+              знаком. На этот раз, американцы, как всегда не подвели. Очень
+              стильная штука, приятная на ощупь, удобная. Пришлось пару секций
+              снять, потому что велик был, но это не беда, потому что таких
+              креплений я почти не встречаю. Пользуюсь тоже частенько. Клеммы на
+              аккумуляторе снять, симку поменять в телефоне, на даче что-нибудь
+              прикрутить. Очень удобно. Чувствуешь себя, как будто во всеоружии,
+              в любой ситуации. Спасибо коллегам, я доволен!
+            </p>
+          </div>
+
+          <div class="s14-block white-block">
+            <img class="s14-img" src="img/s14-3.jpg" alt="" />
+
+            <div class="block-name">
+              <img src="img/icon-human.png" alt="" />
+              <div class="name">
+                <p><b>Дмитрий, 28 лет</b></p>
+              </div>
+            </div>
+            <p class="s14-text">
+              Увидел этот браслет у коллеги на работе, поинтересовался что да
+              как, и заказал себе. Я не люблю бесполезные вещи, а тут мне
+              понравилось именно сочетание стильного вида, да еще с таким
+              набором функций. И пригождается даже чаще, чем я думал. То ножку
+              болтающуюся подкрутить у стола, то просто бутылку открыть. Все
+              постоянно спрашивают, что это, и удивляются. Девушкам нравится
+              очень. Типа, парень и стильный, и практичный - мечта. В общем, я
+              ни разу не пожалел, браслет стоит своих денег однозначно!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s15">
+        <div class="container">
+          <h2>
+            Доставка и
+            <span class="color-orange"> оплата</span>
+          </h2>
+          <div class="s15-list">
+            <div class="s15-list-item">
+              <img src="img/s15-1.png" alt="" />
+
+              <p>
+                Доставка почтой в течение 3-10 рабочих дней. Стоимость доставки
+                товара от 350р.
+              </p>
+            </div>
+            <div class="s15-list-item">
+              <img src="img/s15-2.png" alt="" />
+
+              <p>Оплата заказов<br> осуществляется по факту получения товара</p>
+            </div>
+            <div class="s15-list-item">
+              <img src="img/s15-3.png" alt="" />
+
+              <p>
+                Мы всегда проверяем товар перед отправкой и гарантируем 100%
+                качество
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s1">
+        <div class="s1-title">
+          <p class="s1-title-top">Браслет – Мультитул</p>
+          <h1>leatherman tread</h1>
+        </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-list-1.png" alt="" />
+            <p>29 функций в 1!</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-2.png" alt="" />
+            <p>Стильный мужской аксессуар</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-3.png" alt="" />
+            <p>25 лет гарантии</p>
+          </div>
+        </div>
+
+        <div class="s1-block">
+          <img src="img/icon-hot.png" alt="" />
+          <span
+            >Хит <br />
+            продаж!</span
+          >
+        </div>
+
+        <div class="discount">
+          <div class="discount-top">-50%</div>
+          <div class="discount-bottom">
+            Ваша скидка: <br /><span>2670р.</span>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <div class="timer">
+            <div class="timer-title">Предложение действует:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="price">
+              <div class="price-old">
+                <div>Обычная цена:</div>
+                <div class="price-old-val oldproductsum"></div>
+              </div>
+              <div class="price-new">
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+            <form action="#" method="post" class="orderformcdn" id="form">
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option selected value="RU">Выберите вашу страну</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Введите ваше имя"
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Введите ваш телефон"
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  onclick="checkFields(event, this);"
+                >
+                  Сделать заказ
+                </button>
+                <div class="ajax_loader_block">
+                  <img
+                    class="ajax_loader"
+                    src="img/ajax-loader.gif"
+                    alt="Идет отправка данных"
+                  />
+                  <span class="ajax_loader">Идет отправка данных</span>
+                </div>
+              </div>
+              <div class="form-count">
+                *количество товара по акции <span>ограничено!</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+
+          return false;
+        });
+
+        $(".s8-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-icon_left" src="img/BTN_arrow_back.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right" src="img/BTN_arrow_next.png" alt="">',
+        });
+
+        $(".s14__slider").slick({
+          dots: true,
+          dotsClass: "header-dots",
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-icon_left_blue"  src="img/BTN_arrow_back_blue.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right_blue" src="img/BTN_arrow_next_blue.png" alt="">',
+        });
+      });
+    </script>
+  </body>
+</html>

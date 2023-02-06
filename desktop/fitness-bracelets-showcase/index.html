@@ -1,0 +1,4557 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Витрина фитнес-браслетов</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="ФУНКЦИОНАЛЬНОСТЬ, УДОБСТВО, КОМФОРТ" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function randomInteger(min, max) {
+        var rand = min + Math.random() * (max + 1 - min);
+        rand = Math.floor(rand);
+        return rand;
+      }
+    </script>
+
+    <script type="text/javascript">
+      var day = new Date(),
+        month = new Array(12);
+      (month[0] = "января"),
+        (month[1] = "февраля"),
+        (month[2] = "марта"),
+        (month[3] = "апреля"),
+        (month[4] = "мая"),
+        (month[5] = "июня"),
+        (month[6] = "июля"),
+        (month[7] = "августа"),
+        (month[8] = "сентября"),
+        (month[9] = "октября"),
+        (month[10] = "ноября"),
+        (month[11] = "декабря");
+      var month2 = new Array(12);
+      (month2[0] = "Январь"),
+        (month2[1] = "Февраль"),
+        (month2[2] = "Март"),
+        (month2[3] = "Апрель"),
+        (month2[4] = "Май"),
+        (month2[5] = "Июнь"),
+        (month2[6] = "Июль"),
+        (month2[7] = "Август"),
+        (month2[8] = "Сентябрь"),
+        (month2[9] = "Октябрь"),
+        (month2[10] = "Ноябрь"),
+        (month2[11] = "Декабрь");
+    </script>
+
+    <script type="text/javascript" src="js/lt_landing_valid_form.js"></script>
+    <!-- <script type="text/javascript" src="js/lt_landing_script.js"></script> -->
+    <script type="text/javascript">
+      // $jsonData = {
+      //   RU: {
+      //     currency: " \u0440\u0443\u0431.",
+      //     productsum: 1990,
+      //     oldproductsum: 4990,
+      //     delivery: 0,
+      //     totalsum: "1990.00",
+      //   },
+      // };
+    </script>
+    <style>
+      .ajax_loader {
+        display: none;
+      }
+
+      select,
+      input,
+      button {
+        outline: none;
+      }
+
+      .ajax_loader_block {
+        text-align: center;
+      }
+    </style>
+
+    <!-- LT code insertion -->
+    <!-- /LT code insertion -->
+  </head>
+
+  <body class="body">
+    <header class="offer_section offer_top">
+      <div class="wrapper clearfix">
+        <div class="title_block clearfix">
+          <h1 class="main_title">Фитнес-браслет</h1>
+          <p class="subtitle">
+            ФУНКЦИОНАЛЬНОСТЬ<br />
+            УДОБСТВО, КОМФОРТ
+          </p>
+        </div>
+        <div class="form_block">
+          <div class="timer_block">
+            <p style="font-weight: 900">
+              Скидка 50% до
+              <script type="text/javascript">
+                var newDt = new Date();
+                newDt.setDate(newDt.getDate() + 1);
+                document.write(newDt.getDate() + " " + month[day.getMonth()]);
+              </script>
+            </p>
+            <p style="font-weight: 900">До конца акции осталось:</p>
+            <div class="timer clearfix">
+              <div class="timer_item">
+                <div class="count hours">10</div>
+                <div class="text">часов</div>
+              </div>
+              <div class="timer_item">
+                <div class="count minutes">23</div>
+                <div class="text">минут</div>
+              </div>
+              <div class="timer_item">
+                <div class="count seconds">48</div>
+                <div class="text">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+
+          <form
+            id="order_form"
+            class="order_form"
+            action="/success/"
+            method="post"
+          >
+            <select name="country" class="countryselect select">
+              <option selected value="RU">Россия</option>
+            </select>
+
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              required
+              value
+            />
+            <input
+              class="input"
+              type="tel"
+              name="phone"
+              placeholder="Ваш номер телефона"
+              required
+              value
+            />
+
+            <input
+              type="hidden"
+              name="productsum"
+              class="productsum"
+              value="1990 руб."
+            />
+            <input type="hidden" name="delivery" value="0 руб." />
+            <input
+              type="hidden"
+              name="totalsum"
+              class="productsum"
+              value="1990 руб."
+            />
+            <input type="hidden" name="user" value="1" />
+            <input type="hidden" name="address" value="Уточнить у покупателя" />
+
+            <div class="reolader">
+              <button
+                class="button mm_button"
+                type="submit"
+                onclick="checkFields(event, this);"
+              >
+                Заказать со скидкой
+              </button>
+              <div class="ajax_loader_block">
+                <img
+                  class="ajax_loader"
+                  src="img/ajax-loader.gif"
+                  alt="Идет отправка данных"
+                />
+                <span class="ajax_loader">Идет отправка данных</span>
+              </div>
+            </div>
+            <input type="hidden" name="lttracking" value="undefined" />
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="benefits_section">
+      <div class="wrapper">
+        <h2>
+          Не упустите возможность приобрести себе незаменимого электронного
+          помощника!
+        </h2>
+        <div class="benefits_list clearfix">
+          <div class="benefit_item clearfix">
+            <div class="image_block">
+              <img src="img/photo1.jpg" alt />
+            </div>
+            <div class="text_block">
+              <h4>функциональность</h4>
+              <p>
+                Прибор способен: измеряют пульс, считать пройденные шаги и
+                автоматически определять тип выполняемых нагрузок. Гаджет
+                синхронизируется с вашим смартфоном, сообщает о входящих
+                вызовах, уведомлениях и показывает сообщения.
+              </p>
+            </div>
+          </div>
+          <div class="benefit_item clearfix">
+            <div class="image_block">
+              <img src="img/photo2.jpg" alt />
+            </div>
+            <div class="text_block">
+              <h4>ВЫСОЧАЙШЕЕ КАЧЕСТВО</h4>
+              <p>
+                Корпус изготовлен из нержавеющей стали. Сенсорный экран с
+                подсветкой защищен закаленным стеклом, которое устойчиво к
+                царапинам. Фитнес-браслет оснащен инфракрасным PPG-датчиком,
+                который позволяет не только измерять пульс, но и уровень
+                кислорода в крови.
+              </p>
+            </div>
+          </div>
+          <div class="benefit_item clearfix">
+            <div class="image_block">
+              <img src="img/photo3.jpg" alt />
+            </div>
+            <div class="text_block">
+              <h4>Стиль и уникальность</h4>
+              <p>
+                На руке смотрится фитнес-браслет очень красиво и неповторимо.
+                Мало у кого такой есть, поэтому внимания он привлекает, особенно
+                любителей спорта и противоположного пола.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products_section">
+      <div class="wrapper">
+        <h2>Модельный ряд смарт-часов</h2>
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/1.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/1_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3001</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4450 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_1" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/2.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/2_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3002</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_2" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/3.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/3_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3003</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5750 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_3" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/4.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/4_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3004</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_4" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/5.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/5_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3005</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_5" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/6.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/6_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3006</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_6" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/7.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/7_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3007</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5750 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_7" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/8.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/8_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3008</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_8" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/9.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/9_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3009</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_9" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/10.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/10_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3010</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_10" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/11.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/11_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3011</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4450 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_11" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/12.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/12_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3012</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4450 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_12" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/13.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/13_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3013</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5750 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_13" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/14.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/14_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3014</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5750 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_14" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/15.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/15_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3015</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_15" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/16.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/16_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3016</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4450 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_16" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/17.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/17_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3017</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4450 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_17" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/18.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/18_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3018</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_18" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/19.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/19_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3019</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_19" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/20.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/20_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3020</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5750 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_20" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/21.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/21_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3021</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_21" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/22.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/22_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3022</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5750 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_22" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/23.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/23_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3023</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">5350 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_23" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+
+        <div class="item">
+          <div class="img-box owl-carousel owl-loaded">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(0px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 531px;
+                "
+              >
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/24.jpg" alt /></div>
+                </div>
+                <div class="owl-item" style="width: 265.188px">
+                  <div><img src="img/catalog/24_2.jpg" alt /></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev disabled">
+                <img class="icon-next" src="img/icon-prev.svg" alt />
+              </div>
+              <div class="owl-next">
+                <img class="icon-next" src="img/icon-next.svg" alt />
+              </div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+          <h3>Фитнес-браслет<br /><span>Артикул: 3024</span></h3>
+          <ul class="list">
+            <li>Доставка: все регионы РФ</li>
+            <li>Оплата: при получении</li>
+          </ul>
+          <div class="price_block clearfix">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4450 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <a href="#order" class="button">Заказать</a>
+
+          <a data-modal="#modal_24" class="button-open">ОТКРЫТЬ ОПИСАНИЕ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos_section">
+      <div class="wrapper">
+        <h2>
+          ЭТО НЕ ПРОСТО БРАСЛЕТ<br />
+          ЭТО ВЕРНЫЙ СПУТНИК В ВАШЕЙ ЖИЗНИ
+        </h2>
+        <ul class="colum-4 clearfix">
+          <li><img src="img/sputnik-1.jpg" alt /></li>
+          <li><img src="img/sputnik-2.jpg" alt /></li>
+          <li><img src="img/sputnik-3.jpg" alt /></li>
+          <li><img src="img/sputnik-4.jpg" alt /></li>
+          <li><img src="img/sputnik-5.jpg" alt /></li>
+          <li><img src="img/sputnik-6.jpg" alt /></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews_section">
+      <div class="wrapper">
+        <h2>Отзывы покупателей</h2>
+        <div class="reviews_list owl-carousel owl-loaded">
+          <div class="owl-stage-outer">
+            <div
+              class="owl-stage"
+              style="
+                transform: translate3d(-640px, 0px, 0px);
+                transition: all 0s ease 0s;
+                width: 2240px;
+              "
+            >
+              <div
+                class="owl-item cloned"
+                style="width: 300px; margin-right: 20px"
+              >
+                <div class="review_item">
+                  <img src="img/photo36.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Эльвира Вавилова, г. Москва</div>
+                  <p>
+                    В этом магазине заказала впервые и не пожалела, удобная,
+                    качественная, стильная вещь. Лично мне все нравится. Ремешок
+                    необычный, выглядит прикольно, долго держат заряд. Сверяла
+                    показания с пульсоксиметром и дорогим шагомером — достаточно
+                    точно отображают информацию, погрешность есть, но в целом ею
+                    можно пренебречь.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="owl-item cloned"
+                style="width: 300px; margin-right: 20px"
+              >
+                <div class="review_item">
+                  <img src="img/photo37.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Сергей Обнинский, г. Омск</div>
+                  <p>
+                    Очень удобно в зимнее время, так как всегда бесит
+                    вытаскивать смартфон из кармана на холод, а ещё не зная кто
+                    написал, может вам этот человек и не нужен. С фитнес-браслетом,
+                    вы просто посмотрели на часы, увидели кто написал и прочитали сообщение
+                  </p>
+                </div>
+              </div>
+              <div
+                class="owl-item active"
+                style="width: 300px; margin-right: 20px"
+              >
+                <div class="review_item">
+                  <img src="img/photo35.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Алексей Андрюшенко, г. Тула</div>
+                  <p>
+                    Не знаю как я раньше жил без умных часов. Очень удобно, что
+                    ты всегда на связи и никогда не пропустишь важное сообщение или
+                    уведомление. Всегда можно узнать на сколько ты был активен сегодня,
+                    сколько прошёл км и сколько сжёг калорий. Покупкой очень
+                    доволен!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="owl-item active"
+                style="width: 300px; margin-right: 20px"
+              >
+                <div class="review_item">
+                  <img src="img/photo36.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Эльвира Вавилова, г. Москва</div>
+                  <p>
+                    В этом магазине заказала впервые и не пожалела, удобная,
+                    качественная, стильная вещь. Лично мне все нравится. Ремешок
+                    необычный, выглядит прикольно, долго держат заряд. Сверяла
+                    показания с пульсоксиметром и дорогим шагомером — достаточно
+                    точно отображают информацию, погрешность есть, но в целом ею
+                    можно пренебречь.
+                  </p>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 300px; margin-right: 20px">
+                <div class="review_item">
+                  <img src="img/photo37.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Сергей Обнинский, г. Омск</div>
+                  <p>
+                    Очень удобно в зимнее время, так как всегда бесит
+                    вытаскивать смартфон из кармана на холод, а ещё не зная кто
+                    написал, может вам этот человек и не нужен. С фитнес-браслетом,
+                    вы просто посмотрели на часы, увидели кто написал и прочитали сообщение
+                  </p>
+                </div>
+              </div>
+              <div
+                class="owl-item cloned"
+                style="width: 300px; margin-right: 20px"
+              >
+                <div class="review_item">
+                  <img src="img/photo35.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Алексей Андрюшенко, г. Тула</div>
+                  <p>
+                    Не знаю как я раньше жил без умных часов. Очень удобно, что
+                    ты всегда на связи и никогда не пропустишь важное сообщение или
+                    уведомление. Всегда можно узнать на сколько ты был активен сегодня,
+                    сколько прошёл км и сколько сжёг калорий. Покупкой очень
+                    доволен!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="owl-item cloned"
+                style="width: 300px; margin-right: 20px"
+              >
+                <div class="review_item">
+                  <img src="img/photo36.jpg" alt="Фитнес-браслет" />
+                  <div class="author_info">Алексей Бородин, г. Москва</div>
+                  <p>
+                    В этом магазине заказала впервые и не пожалела, удобная,
+                    качественная, стильная вещь. Лично мне все нравится. Ремешок
+                    необычный, выглядит прикольно, долго держат заряд. Сверяла
+                    показания с пульсоксиметром и дорогим шагомером — достаточно
+                    точно отображают информацию, погрешность есть, но в целом ею
+                    можно пренебречь.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav">
+            <div class="owl-prev disabled">
+              <img class="icon-next" src="img/icon-prev.svg" alt />
+            </div>
+            <div class="owl-next">
+              <img class="icon-next" src="img/icon-next.svg" alt />
+            </div>
+          </div>
+          <div class="owl-dots disabled"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guaranty_section">
+      <div class="wrapper">
+        <h2>Тройная гарантия</h2>
+        <div class="steps_list">
+          <div class="step_item">
+            <img src="img/guaranty1.webp" alt />
+            <p
+              style="
+                font-weight: 900;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+              "
+            >
+              Качественный товар
+            </p>
+            <p>
+              Мы всегда проверяем товар перед отправкой. Все товары закупаются
+              только <u>у проверенных поставщиков</u>, которые также проводят
+              проверку брака и <u>полный контроль качества</u>.
+            </p>
+          </div>
+          <div class="step_item">
+            <img src="img/guaranty2.webp" alt />
+            <p
+              style="
+                font-weight: 900;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+              "
+            >
+              Возврат денег
+            </p>
+            <p>
+              Наша компания соблюдает
+              <u>законы России и человеческие отношения</u>. При возникновении
+              претензий со стороны клиента, мы оперативно решим любую проблему.
+            </p>
+          </div>
+          <div class="step_item">
+            <img src="img/guaranty3.webp" alt />
+            <p
+              style="
+                font-weight: 900;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+              "
+            >
+              Оплата при получении
+            </p>
+            <p>
+              При заказе у нас на сайте <u>не требуется предоплата</u> за товар
+              или за доставку. Вы оплачиваете заказ после проверки, при
+              получении на почте.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order_steps_section">
+      <div class="wrapper">
+        <h2>Как оформить заказ?</h2>
+        <div class="steps_list">
+          <div class="step_item">
+            <img src="img/order_steps__step1_image.webp" alt />
+            <div class="number">01</div>
+            <p>Вы оставляете заявку на нашем сайте</p>
+          </div>
+          <div class="step_item">
+            <img src="img/order_steps__step2_image.webp" alt />
+            <div class="number">02</div>
+            <p>Менеджер перезванивает для оформления заказа</p>
+          </div>
+          <div class="step_item">
+            <img src="img/order_steps__step3_image.webp" alt />
+            <div class="number">03</div>
+            <p>Мы отправляем ваш заказ почтой в любой регион</p>
+          </div>
+          <div class="step_item">
+            <img src="img/order_steps__step4_image.webp" alt />
+            <div class="number">04</div>
+            <p>Вы оплачиваете заказ при получении</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer_section offer_top">
+      <div class="wrapper clearfix">
+        <div class="title_block clearfix">
+          <h1 class="main_title">Фитнес-браслет</h1>
+          <p class="subtitle">ФУНКЦИОНАЛЬНОСТЬ <br />УДОБСТВО, КОМФОРТ</p>
+        </div>
+        <div class="form_block">
+          <div class="timer_block">
+            <p style="font-weight: 900">
+              Скидка 50% до
+              <script type="text/javascript">
+                var newDt = new Date();
+                newDt.setDate(newDt.getDate() + 1);
+                document.write(newDt.getDate() + " " + month[day.getMonth()]);
+              </script>
+            </p>
+            <p style="font-weight: 900">До конца акции осталось:</p>
+            <div class="timer clearfix">
+              <div class="timer_item">
+                <div class="count hours">10</div>
+                <div class="text">часов</div>
+              </div>
+              <div class="timer_item">
+                <div class="count minutes">23</div>
+                <div class="text">минут</div>
+              </div>
+              <div class="timer_item">
+                <div class="count seconds">48</div>
+                <div class="text">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="price_block clearfix" id="order">
+            <div class="price_item old">
+              <div class="text">Обычная цена:</div>
+              <div class="value oldproductsum">4990 руб.</div>
+            </div>
+            <div class="price_item new">
+              <div class="text">Цена по акции:</div>
+              <div class="value productsum">1990 руб.</div>
+            </div>
+          </div>
+          <form
+            id="order_form"
+            class="order_form"
+            action="/success/"
+            method="post"
+          >
+            <select name="country" class="countryselect select">
+              <option selected value="RU">Россия</option>
+            </select>
+
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              required
+              value
+            />
+            <input
+              class="input"
+              type="tel"
+              name="phone"
+              placeholder="Ваш номер телефона"
+              required
+              value
+            />
+
+            <input
+              type="hidden"
+              name="productsum"
+              class="productsum"
+              value="1990 руб."
+            />
+            <input type="hidden" name="delivery" value="0 руб." />
+            <input
+              type="hidden"
+              name="totalsum"
+              class="productsum"
+              value="1990 руб."
+            />
+            <input type="hidden" name="user" value="1" />
+            <input type="hidden" name="address" value="Уточнить у покупателя" />
+
+            <div class="reolader">
+              <button
+                class="button mm_button"
+                type="submit"
+                onclick="checkFields(event, this);"
+              >
+                Заказать со скидкой
+              </button>
+              <div class="ajax_loader_block">
+                <img
+                  class="ajax_loader"
+                  src="img/ajax-loader.gif"
+                  alt="Идет отправка данных"
+                />
+                <span class="ajax_loader">Идет отправка данных</span>
+              </div>
+            </div>
+            <input type="hidden" name="lttracking" value="undefined" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <p style="text-align: center"></p>
+      <p>
+        ООО "Торг Сити" ИНН 7725683445 / ОГРН 1097746802780 г. Москва, Монтажная
+        улица, дом 2а строение 1, офис 405
+      </p>
+      <a href="politika.html" target="_blank"
+        >Политика&nbsp;конфиденциальности</a
+      >
+      <a href="agreement.html" target="_blank"
+        >Пользовательское&nbsp;соглашение</a
+      >
+      <p></p>
+    </footer>
+
+    <div class="modal" id="modal_1">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/1.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/1_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3001</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4450 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+    <div class="modal" id="modal_2">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/2.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/2_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3002</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4990 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+    <div class="modal" id="modal_3">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/3.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/3_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3003</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5750 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_4">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/4.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/4_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3004</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_5">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/5.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/5_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3005</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_6">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/6.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/6_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3006</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_7">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/7.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/7_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3007</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5750 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_8">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/8.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/8_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3008</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4990 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_9">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/9.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/9_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3009</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4990 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_10">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/10.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/10_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3010</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4990 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_11">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/11.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/11_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3011</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4450 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_12">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/12.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/12_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3012</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4450 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_13">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/13.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/13_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3013</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5750 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_14">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/14.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/14_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3014</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5750 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_15">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/15.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/15_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3015</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_16">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/16.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/16_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3016</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4450 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_17">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/17.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/17_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3017</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4450 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_18">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/18.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/18_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3018</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4990 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_19">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/19.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/19_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3019</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_20">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/20.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/20_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3020</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5750 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_21">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/21.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/21_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3021</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_22">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/22.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/22_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3022</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">5750 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_23">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/23.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/23_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3023</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4350 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <div class="modal" id="modal_24">
+      <div class="modal__content modal__content--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/close.svg" alt="Close" />
+        </button>
+        <div class="products_section">
+          <div class="wrapper">
+            <div class="item">
+              <div class="img-box owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 531px;
+                    "
+                  >
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/24.jpg" alt /></div>
+                    </div>
+                    <div class="owl-item" style="width: 265.188px">
+                      <div><img src="img/catalog/24_2.jpg" alt /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled">
+                    <img class="icon-next" src="img/icon-prev.svg" alt />
+                  </div>
+                  <div class="owl-next">
+                    <img class="icon-next" src="img/icon-next.svg" alt />
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+              <h3>Фитнес-браслет<br /><span>Артикул: 3024</span></h3>
+
+              <table cellpadding="5">
+                <tr>
+                  <td colspan="2"><b>Акселерометр</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b> Измерение пульса</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Анализ информации <br />(настроение, еда, сон) </b
+                    ><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Отслеживание сна</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Кол-во сожженных калорий</b><span>Да</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Датчик движения</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Шагомер</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>Вибровызов</b><span>Да</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Обратите внимание</b
+                    ><span>21 день работы от <br />аккумулятора</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Удачное решение </b><span>Оценка качества сна</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <b>Пользователи оценят</b
+                    ><span>Управление <br />полезными привычками</span>
+                  </td>
+                </tr>
+              </table>
+              <div class="price_block clearfix">
+                <div class="price_item old">
+                  <div class="text">Обычная цена:</div>
+                  <div class="value oldproductsum">4450 руб.</div>
+                </div>
+                <div class="price_item new">
+                  <div class="text">Цена по акции:</div>
+                  <div class="value productsum">1990 руб.</div>
+                </div>
+              </div>
+
+              <a
+                href="#order"
+                class="button close-modal data-close"
+                data-close
+                href="#"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal__content -->
+    </div>
+
+    <!-- /.modal -->
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <script src="js/jquery.fancybox.min.js"></script>
+  </body>
+</html>

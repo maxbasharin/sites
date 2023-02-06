@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>Xiaomi Zmi MF885</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <script type="text/javascript">
+      function date() {
+        var d = new Date();
+
+        var month_num = d.getMonth();
+
+        var day = d.getDate();
+
+        var hours = d.getHours();
+        month = new Array(
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        );
+
+        if (day <= 9) day = "0" + day;
+        if (hours <= 9) hours = "0" + hours;
+        date_time =
+          day + ".&nbsp" + month[month_num] + ".&nbsp" + d.getFullYear();
+        if (document.layers) {
+          document.layers.doc_time.document.write(date_time);
+
+          document.layers.doc_time.document.close();
+        } else document.getElementById("doc_date").innerHTML = date_time;
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <section class="s1">
+        <div class="container">
+          <div class="s1-title">
+            <h1>
+              <span class="s1-title-top color-orange">Xiaomi</span>
+              <span class="s1-title-top color-blue"> Zmi MF885</span>
+            </h1>
+            <div class="s1-title-bottom">
+              Внешний аккумулятор и WiFi-роутер 2 в 1!
+            </div>
+          </div>
+         
+      
+<div class="s1-animation">
+  
+  <div class="slidewifi">
+    <img src="img/s1-slidewifi-1.png">
+    <img src="img/s1-slidewifi-2.png">
+    <img src="img/s1-slidewifi-3.png">
+    <img src="img/s1-slidewifi-4.png">
+
+  </div>
+
+  <div class="slidebattery">
+    <img src="img/s1-slidebattery-1.png">
+    <img src="img/s1-slidebattery-2.png">
+    <img src="img/s1-slidebattery-3.png">
+    <img src="img/s1-slidebattery-4.png">
+    <img src="img/s1-slidebattery-5.png">
+    <img src="img/s1-slidebattery-6.png">
+  </div>
+</div>
+
+      </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-list-1.png" alt="" />
+            <p>Мощный 4G интернет</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-2.png" alt="" />
+            <p>Быстрая зарядка устройств</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-3.png" alt="" />
+            <p>Надежный и прочный</p>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <div class="price-block">
+            <div class="price-disount">
+              Скидка <br />
+              <span> - 50%</span>
+            </div>
+
+            <div class="price">
+              <p>Новая цена:</p>
+              <div class="price-old">
+                <div class="price-old-val oldproductsum">5000 руб</div>
+              </div>
+              <div class="price-new">
+                <div class="color-orange">2500 р.</div>
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <form method="post" class="orderformcdn">
+              <div class="form-count">
+                Осталось
+                <span>7</span>
+                устройств по акции
+              </div>
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option selected value="RU">Россия</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Ваше Имя"
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Ваш телефон"
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <!-- <div class="reolader form-item">
+              <button type="submit" class="form-btn mm_button" onclick="checkFields(event, this);">Сделать заказ</button>
+              <div class="ajax_loader_block"><img class="ajax_loader" src="img/ajax-loader.gif" alt="Идет отправка данных"> <span class="ajax_loader">Идет отправка данных</span></div>
+          </div> -->
+            </form>
+          </div>
+
+          <div class="container">
+            <form method="post" class="">
+              <div class="reolader form-item">
+                <button type="submit" class="form-btn mm_button">
+                  Заказать сейчас
+                </button>
+              </div>
+              <!-- <div class="form-count">
+            Осталось <span class="timer-num-2">1</span><span class="timer-num-2">3</span> шарфов по акции
+        
+          </div> -->
+            </form>
+          </div>
+
+          <div class="timer">
+            <div class="timer-title">До окончания акции осталось:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+            <div class="timer-footer">
+              <u>Политика конфиденциальности</u>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s2">
+        <h2>Встречайте Xiaomi Zmi MF885!</h2>
+
+        <div class="s2-item">
+          <div class="s2-item-list">
+           <img class="s2-gif" src="gif/2.gif" alt="">
+            <p>
+              Xiaomi Zmi MF885 - это инновационный девайс, совмещающий в себе
+              мощный power bank емкостью 15000 мАч и быстрый WiFi-роутер со
+              скоростью до 150 мб/с
+            </p>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-2.png" alt="" />
+            <p>
+              С его помощью можно быстро заряжать мобильные устройства и
+              раздавать WiFi на 9 пользователей в любом месте и в любой
+              ситуации.
+            </p>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-3.png" alt="" />
+            <p>
+              Ударопрочный и водонепроницаемый корпус специально создан для
+              того, чтобы пережить любые условия эксплуатации.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s3">
+        <h2>Как это работает?</h2>
+
+        <div class="s3-item">
+          <div class="s3-item-list">
+            <img src="img/s3-1.png" alt="" />
+            <p>
+              Заряжайте любые ваши устройства: телефоны, планшеты, ноутбуки и
+              другую технику
+            </p>
+          </div>
+          <div class="s3-item-list">
+            <p>
+              Вставьте сим-карту в специальный слот и пользуйтесь интернетом в
+              любом месте
+            </p>
+            <img src="img/s3-2.png" alt="" />
+          </div>
+          <div class="s3-item-list">
+            <img src="img/s3-3.png" alt="" />
+            <p>
+              Скачайте бесплатное приложение в AppStore или Google Play и
+              управляйте роутером
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="s4">
+        <h2>Смотрите видео:</h2>
+        <iframe
+          width="480"
+          height="315"
+          src="https://www.youtube.com/embed/BX-DulfrXUk?start=46"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="container">
+          <a href="#form">
+            <button type="submit" class="form-btn mm_button">
+              Заказать сейчас
+            </button>
+           </a>
+        </div>
+      </section> -->
+
+      <section class="s5">
+        <h2>
+          Полноценный WiFi
+          <br />
+          роутер!
+        </h2>
+
+        <div class="s5-item">
+          <div class="s5-item-list">
+            <p>
+              Бесплатное приложение содержит весь инструментарий для
+              полноценного управления WiFi-роутером и позволяет работать
+              удаленно.
+            </p>
+          </div>
+          <img src="img/s5-bg.jpg" alt="" />
+          <div class="s5-item-list">
+            <div class="s5-footer-title">С помощью приложения Вы можете:</div>
+            <ul class="s5-list">
+              <li>Просматривать уведомления</li>
+              <li>Смотреть уровень сигнала</li>
+              <li>Смотреть кол-во и статус подключенных устройств</li>
+              <li>Видеть уровень заряда</li>
+              <li>Контролировать трафик и многое другое</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="s5-footer">
+          <p>
+            А простой интерфейс и интуитивно понятный набор функций помогут
+            справиться с настройкой даже неподготовленному пользователю.
+          </p>
+          <img src="img/s5.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="s6">
+        <h2>
+          Быстрый интернет,<br />
+          где угодно!
+        </h2>
+
+        <div class="s6-item">
+          <div class="s6-item-list">
+            <img src="img/s6-1.png" alt="" />
+            <p>Дача</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img src="img/s6-2.png" alt="" />
+            <p>Автомобиль</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img src="img/s6-3.png" alt="" />
+            <p>Отдых на природе</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img src="img/s6-4.png" alt="" />
+            <p>Поезд или автобус</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img src="img/s6-5.png" alt="" />
+            <p>Посиделки с друзьями</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img class="s6-img" src="img/s6-6.png" alt="" />
+            <p>Дом</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img src="img/s6-7.png" alt="" />
+            <p>Гараж</p>
+          </div>
+
+          <div class="s6-item-list">
+            <img class="s6-img-2" src="img/s6-8.png" alt="" />
+            <p>Охота и рыбалка</p>
+          </div>
+        </div>
+        <div class="s6-footer">
+          <p>
+            Мощная антенна ZMI ловит 4G там, где обычный телефон не справляется!
+          </p>
+          <img src="gif/1.gif" alt="" />
+          <div class="container">
+            <a href="#form">
+              <button type="submit" class="form-btn mm_button">
+                Заказать сейчас
+              </button>
+             </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="s7">
+        <h2>Инновационные технологии</h2>
+        <div class="s7-item">
+          <div class="s7-item-list">
+            <img src="img/s7-1.png" alt="" />
+            <p>
+              Технология быстрой зарядки QC 2.0 <br />Зарядка iPhone - 3 ч
+              <br />Android - 1,6 ч <br />
+              iPad mini - 1,2 ч
+            </p>
+          </div>
+          <div class="s7-item-list">
+            <img src="img/s7-2.png" alt="" />
+            <p>
+              Контрольный чип Texes Instruments защищает устройство от
+              перегрузки, КЗ, перегрева, перезарядки и микротоков
+            </p>
+          </div>
+          <div class="s7-item-list">
+            <img src="img/s7-3.png" alt="" />
+            <p>
+              Распознавание типа устройства и подстройка мощности зарядки
+              автоматически от Xiaomi
+            </p>
+          </div>
+          <div class="s7-item-list">
+            <img src="img/s7-4.png" alt="" />
+            <p>
+              Технология Multi-mode cover поддерживает все международные
+              стандарты WiFi сетей, что позволяет использовать роутер в любой
+              точке мира
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s8">
+        <div class="container">
+          <h2>Спецификация:</h2>
+
+          <div class="s8-item">
+            <div class="s8-title">Характеристики</div>
+            <ul class="s8-list">
+              <li>Модель - MF885</li>
+              <li>Материал корпуса - металл</li>
+              <li>Размеры - 160 х 117 х 35 мм</li>
+              <li>Вес (g) - 315</li>
+            </ul>
+          </div>
+
+          <div class="s8-item">
+            <div class="s8-title">Аксессуары</div>
+            <ul class="s8-list">
+              <li>Кабель в комплекте - MicroUSB</li>
+            </ul>
+          </div>
+
+          <div class="s8-item">
+            <div class="s8-title">Дополнительная информация</div>
+            <ul class="s8-list">
+              <li>Особенности - Power-bankмаршрутизатор.</li>
+              <li>Максимальная скорость 150 Мбит/сек;</li>
+              <li>3G/4G; стандарт связи: 802.11 b/g/n.</li>
+            </ul>
+          </div>
+
+          <div class="s8-item">
+            <div class="s8-title">Батарея</div>
+            <ul class="s8-list">
+              <li>Тип - Li-Ion</li>
+              <li>Разъемы - USB, Type-A</li>
+            </ul>
+          </div>
+
+          <div class="s8-item">
+            <div class="s8-title">Аккумулятор и Питание</div>
+            <ul class="s8-list">
+              <li>Объём аккумулятора (mAh) - 15000</li>
+              <li>Поддержка быстрой зарядки</li>
+              <li>Qualcomm Quick Charge 2.0</li>
+            </ul>
+          </div>
+
+          <div class="s8-item">
+            <div class="s8-title">Дополнительно</div>
+            <ul class="s8-list">
+              <li>Защита от короткого замыкания</li>
+              <li>Защита от перегрева</li>
+              <li>Защита от перегрузки</li>
+              <li>Индикатор заряда</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="s9">
+        <p>
+          К сожалению, в связи с высоким спросом на power-банки Xiaomi, мы
+          вынуждены ввести ограничение: <br />
+          <span class="color-orange"> не более 3 устройств в 1 руки!</span>
+        </p>
+
+        <div class="form-wrapper">
+          <div class="price-block">
+            <div class="price-disount">
+              Скидка <br />
+              <span> - 50%</span>
+            </div>
+
+            <div class="price">
+              <p>Новая цена:</p>
+              <div class="price-old">
+                <div class="price-old-val oldproductsum">5000 руб</div>
+              </div>
+              <div class="price-new">
+                <div class="color-orange">2500 р.</div>
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timer">
+            <div class="timer-title">
+              акция действует до <span id="doc_date"> </span>
+            </div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <form method="post" class="">
+              <div class="reolader form-item">
+                <a href="#form">
+                  <button type="submit" class="form-btn mm_button">
+                    Заказать сейчас
+                  </button>
+                 </a>
+              </div>
+              <!-- <div class="form-count">
+            Осталось <span class="timer-num-2">1</span><span class="timer-num-2">3</span> шарфов по акции
+        
+          </div> -->
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2>Отзывы покупателей</h2>
+
+        <div class="reviews__slider">
+          <div class="reviews-block white-block">
+            <img class="reviews-img" src="img/s10-1.png" alt="" />
+
+            <span class="block-name"> <b>Виктор, 35 лет</b></span> <br />
+
+            <img class="reviews-icon-img" src="img/icon-stars.png" alt="" />
+            <p>
+              Много приходится ездить в автомобиле по работе, зачастую за город.
+              Часто сталкиваюсь с проблемами потери сигнала и нехватки заряда на
+              устройстве. А мне всегда нужно быть на связи. Не секрет, что когда
+              телефон ищет сигнал, он жрет очень много зарядки. Коллеги
+              порекомендовали данный девайс. Я заказал. И правда, спасение.
+              Лежит у меня в машине, 4G достает даже из низин за городом. Заряда
+              хватает очень надолго, подзаряжаю раз в два дня, учитывая, что
+              пользуюсь целыми днями, то зарядкой, то интернетом. И с семьей,
+              когда выбираемся куда-то, очень удобно, что в машине есть свой
+              WIFi. Жена и дети не нарадуются.
+            </p>
+          </div>
+          <div class="reviews-block white-block">
+            <img class="reviews-img" src="img/s10-2.png" alt="" />
+
+            <span class="block-name"> <b>Владимир, 30 лет</b></span> <br />
+
+            <img class="reviews-icon-img" src="img/icon-stars.png" alt="" />
+
+            <p>
+              Давно дружу с Xiaomi. Качественная техника, не раз убеждался, даже
+              в сравнении с японцами, американцами, Xiaomi во многом выигрывает.
+              В этот раз, все как всегда. Пришло, качественно упаковано,
+              красиво. Все работает, как заявлено на сайте. Минусов пока не
+              заметил. Больше того, интернет ловит даже в глуши, а дома сигнал
+              уверенно пробивает стены. Приложение очень удобное, можно все
+              настроить под любые задачи. При этом, емкости хватает надолго,
+              часто таскаю с собой в рюкзаке, забываю вытащить подзарядить по
+              нескольку дней, а все равно хватает. Ни разу еще не умирал. Корпус
+              тоже радует. Признаться, уже пару раз ронял его - ни царапины. И
+              работает все так же. Удачная покупка, смело могу рекомендовать!
+            </p>
+          </div>
+          <div class="reviews-block white-block">
+            <img class="reviews-img" src="img/s10-3.png" alt="" />
+            <span class="block-name"> <b>Сергей, 28 лет</b></span> <br />
+
+            <img class="reviews-icon-img" src="img/icon-stars.png" alt="" />
+
+            <p>
+              Работаю гидом по экстремальному туризму. Очень часто выбираемся на
+              природу на несколько дней, а то и недель. С павер-банками общаюсь
+              давно, перепробовал много. И самым приятным было знакомство с
+              Xiaomi Zmi MF885. Помимо того, что это просто хороший павер-банк в
+              прочном корпусе, это еще и роутер. Причем полноценный роутер. И
+              при таком сочетании полузных функций, цена совсем не кусается.
+              Хотя, выполнено все весьма качественно. Я брал уже в несколько
+              поездок, и в горы, и в сплавы, ни разу не подвел, работает, как
+              часы. И товарищам-путешественникам WiFi раздать можно. Они
+              радуются, как дети) Я доволен покупкой.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s11">
+        <h2>Как заказать товар?</h2>
+
+        <div class="s11-item">
+          <div class="s11-item-list">
+            <img src="img/s11-1.png" alt="" />
+            <p>
+              <span>Шаг 1</span><br />
+              Оставьте заявку на заказ через форму ниже
+            </p>
+          </div>
+          <div class="s11-item-list">
+            <p>
+              <span>Шаг 2</span><br />
+              Мы свяжемся с Вами для подтверждения заказа
+            </p>
+            <img src="img/s11-2.png" alt="" />
+          </div>
+          <div class="s11-item-list">
+            <img src="img/s11-3.png" alt="" />
+            <p>
+              <span>Шаг 3</span><br />
+              Через несколько дней наш курьер доставит Вам товар
+            </p>
+          </div>
+          <div class="s11-item-list">
+            <p>
+              <span>Шаг 4</span><br />
+              Наслаждайтесь результатом!
+            </p>
+            <img src="img/s11-4.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="s1 footer">
+        <div class="container">
+          <div class="s1-title">
+            <h1>
+              <span class="s1-title-top color-orange">Xiaomi</span>
+              <span class="s1-title-top color-blue"> Zmi MF885</span>
+            </h1>
+            <div class="s1-title-bottom">
+              Внешний аккумулятор и WiFi-роутер 
+в одном приборе!
+            </div>
+          </div>
+
+      </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-list-1.png" alt="" />
+            <p>Мощный 4G интернет</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-2.png" alt="" />
+            <p>Быстрая зарядка устройств</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-3.png" alt="" />
+            <p>Надежный и прочный</p>
+          </div>
+        </div>
+
+        <div class="form-wrapper" id="form">
+          <div class="price-block">
+            <div class="price-disount">
+              Скидка <br />
+              <span> - 50%</span>
+            </div>
+
+            <div class="price">
+              <p>Новая цена:</p>
+              <div class="price-old">
+                <div class="price-old-val oldproductsum">5000 руб</div>
+              </div>
+              <div class="price-new">
+                <div class="color-orange">2500 р.</div>
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <form method="post" class="orderformcdn">
+              <div class="form-count">
+                Осталось
+                <span>7</span>
+                устройств по акции
+              </div>
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option selected value="RU">Россия</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Ваше Имя"
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Ваш телефон"
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+            </form>
+          </div>
+
+          <div class="container">
+            <form method="post" class="">
+              <div class="reolader form-item">
+               <a href="#btn">
+                <button type="submit" class="form-btn mm_button">
+                  Заказать сейчас
+                </button>
+               </a>
+              </div>
+              <!-- <div class="form-count">
+            Осталось <span class="timer-num-2">1</span><span class="timer-num-2">3</span> шарфов по акции
+        
+          </div> -->
+            </form>
+          </div>
+
+          <div class="timer">
+            <div class="timer-title">До окончания акции осталось:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+            <div class="timer-footer">
+              <u>Политика конфиденциальности</u>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <script type="text/javascript">
+      date();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+          if (_href == "#order_form") {
+            var product = $(this).parent().find("h4").text();
+            $(
+              "#order_form select[name='comment'] option[value='" +
+                product +
+                "']"
+            ).prop("selected", true);
+          }
+          return false;
+        });
+
+
+        $(".reviews__slider").slick({
+          dotsClass: "header-dots",
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-reviews_left" <img src="img/BTN_arrow_back.png" alt="">',
+          nextArrow:
+            '<img class="slider-reviews_right" src="img/BTN_arrow_next.png" alt="">',
+        });
+
+     
+      });
+    </script>
+  </body>
+</html>

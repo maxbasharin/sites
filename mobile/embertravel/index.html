@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>Ember Travel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/lt_landing_valid_form.js"></script>
+    <script type="text/javascript" src="js/lt_landing_script.js"></script>
+    <script type="text/javascript">
+      $jsonData = {
+        RU: {
+          currency: "\u0440.",
+          productsum: 1290,
+          oldproductsum: 2490,
+          delivery: 0,
+          totalsum: "1290",
+        },
+      };
+    </script>
+
+    <script type="text/javascript">
+      function date() {
+        var d = new Date();
+        var month_num = d.getMonth();
+        var day = d.getDate();
+        month = new Array(
+          "января",
+          "февраля",
+          "марта",
+          "апреля",
+          "мая",
+          "июня",
+
+          "июля",
+          "августа",
+          "сентября",
+          "октября",
+          "ноября",
+          "декабря"
+        );
+
+        if (day <= 9) day = "0" + day;
+
+        date_date = "" + day + "&nbsp;" + month[month_num] + "";
+        if (document.layers) {
+          document.layers.doc_date.document.write(date_date);
+          document.layers.doc_date.document.close();
+        } else document.getElementById("doc_date").innerHTML = date_date;
+      }
+    </script>
+
+    <style>
+      .ajax_loader {
+        display: none;
+      }
+
+      .pulse {
+        animation: pulse 1s infinite;
+      }
+      .pulse:hover {
+        animation: none;
+      }
+
+      @-webkit-keyframes pulse {
+        0% {
+          -webkit-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0.7);
+        }
+        70% {
+          -webkit-box-shadow: 0 0 0 10px rgba(255, 114, 0, 0);
+        }
+        100% {
+          -webkit-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0);
+        }
+      }
+      @keyframes pulse {
+        0% {
+          -moz-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0.7);
+          box-shadow: 0 0 0 0 rgba(255, 114, 0, 0.7);
+        }
+        70% {
+          -moz-box-shadow: 0 0 0 10px rgba(255, 114, 0, 0);
+          box-shadow: 0 0 0 20px rgba(255, 114, 0, 0);
+        }
+        100% {
+          -moz-box-shadow: 0 0 0 0 rgba(255, 114, 0, 0);
+          box-shadow: 0 0 0 0 rgba(255, 114, 0, 0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="s1">
+        <div class="s1-title">
+          <h1 class="color-orange">Ember Travel</h1>
+          <p class="s1-subtitle">умная термокружка</p>
+        </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/icon-smartphone.svg" alt="" />
+            <div class="s1-list-text">
+              Управляйте<br />
+              со смартфона
+            </div>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/icon-canada-flag.svg" alt="" />
+            <div class="s1-list-text">
+              Made <br />
+              in Canada
+            </div>
+          </div>
+        </div>
+
+        <div class="discount">
+          <div class="discount-top">-50%</div>
+          <div class="discount-bottom">хит продаж!</div>
+        </div>
+
+        <div class="reolader form-item">
+          <a href="#form" class="form-btn mm_button"> Заказать термокружку </a>
+        </div>
+      </section>
+
+      <section class="s2">
+        <div class="s2-item">
+          <div class="s2-item-list">
+            <img src="img/s2-1.png" alt="" />
+            <div class="s2-text">Герметичная крышка</div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-2.png" alt="" />
+            <div class="s2-text">Удобный <br />объём</div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-3.png" alt="" />
+            <div class="s2-text">Регулятор температуры</div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-4.png" alt="" />
+            <div class="s2-text">Светодиодный дисплей</div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-5.png" alt="" />
+            <div class="s2-text">Память последней температуры</div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-6.png" alt="" />
+            <div class="s2-text">
+              Спящий <br />
+              режим
+            </div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-7.png" alt="" />
+            <div class="s2-text">Подогрев до 24 часов без подзарядки</div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-8.png" alt="" />
+            <div class="s2-text">Премиальное нескользящее покрытие</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s3">
+        <div class="s3-slider">
+          <img src="img/s3-1.jpg" alt="" />
+          <img src="img/s3-2.jpg" alt="" />
+          <img src="img/s3-3.jpg" alt="" />
+          <img src="img/s3-4.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="s4">
+        <h2 class="color-orange">
+          Вы заслуживаете <br />
+          большего!
+        </h2>
+        <div class="s4-item">
+          <div class="s4-item-text">
+            <span class="color-orange">Ember Travel</span> не просто держит Ваш
+            напиток горячим. Умная кружка с подогревом позволяет вам задать
+            точную температуру питья и держать её там
+            <span class="color-orange">до 24 часов</span> в режиме автономной
+            работы.
+          </div>
+          <div class="s4-block">
+            <div class="s4-block-text">
+              Ваш напиток никогда не будет слишком холодным или горячим!
+            </div>
+            <div class="s4-block-time pulse">24 <span>часа</span></div>
+          </div>
+        </div>
+
+        <img class="s4-gif" src="gif/2.gif" alt="" />
+
+        <div class="s4-list">
+          <div class="s4-list-item">
+            <img src="img/s4-icon-1.png" alt="" />
+            <p>
+              Легко моется <br />
+              и <span class="color-orange">не боится воды</span>
+            </p>
+            <img src="img/icon-true.svg" alt="" />
+          </div>
+          <div class="s4-list-item">
+            <img src="img/s4-icon-2.png" alt="" />
+            <p>
+              Объём кружки<br />
+              <span class="color-orange">355 мл</span>
+            </p>
+            <img src="img/icon-true.svg" alt="" />
+          </div>
+          <div class="s4-list-item">
+            <img src="img/s4-icon-3.png" alt="" />
+            <p>
+              Компактная <br />
+              <span class="color-orange">зарядка в комплекте</span>
+            </p>
+            <img src="img/icon-true.svg" alt="" />
+          </div>
+        </div>
+        <img class="s4-gif" src="gif/3.gif" alt="" />
+      </section>
+
+      <section class="s5">
+        <div class="s5-block">
+          <div class="s5-block-text color-orange">
+            Закажи сегодня и получи скидку
+          </div>
+          <div class="s5-block-discount">
+            <span>5 </span><span>5 </span><span>%</span>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <div class="container">
+            <form action="#" method="post" class="orderformcdn">
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option selected disabled>Страна</option>
+                  <option value="RU">Россия</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Имя"
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Телефон"
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <div class="price">
+                <div class="price-old">
+                  <div class="price-old-val oldproductsum">4 450 ₽</div>
+                </div>
+                <div class="price-new">
+                  <span class="price-new-val productsum">2990 ₽</span>
+                </div>
+              </div>
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  onclick="checkFields(event, this);"
+                >
+                  Заказать термокружку
+                </button>
+                <div class="ajax_loader_block">
+                  <img
+                    class="ajax_loader"
+                    src="img/ajax-loader.gif"
+                    alt="Идет отправка данных"
+                  />
+                  <span class="ajax_loader">Идет отправка данных</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="timer">
+            <div class="timer-title">ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-count">Политика конфиденциальности</div>
+        </div>
+      </section>
+
+      <section class="s6">
+        <div class="container">
+          <h2 class="color-orange">Легко <br />пользоваться!</h2>
+          <div class="s6-item">
+            <p>
+              <span class="color-orange">Ember Travel</span> оснащена сенсорным
+              дисплеем, с помощью которого вы можете задавать температуру
+              напитку, смотреть текущую температуру и уровень заряда.
+            </p>
+          </div>
+        </div>
+        <div class="s6-block">
+          <img class="s6-logo" src="img/s6-logo.png" alt="" />
+          <div class="s6-block-text">
+            <img class="s6-tap" src="img/icon-tap.svg" alt="" />
+            <p>Коснитесь логотипа, чтобы активировать дисплей</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s7">
+        <div class="container">
+          <h2 class="color-orange">
+            Скачайте фирменное приложение в AppStore<br />
+            или Google Play
+          </h2>
+          <div class="s7-subtitle">Управляйте кружкой со своего смартфона!</div>
+        </div>
+        <div class="s7-item">
+          <div class="container">
+            <div class="7-item-left">
+              <ul class="list">
+                <li>Задавайте температуру удаленно</li>
+                <li>Получайте уведомления о готовности напитка</li>
+                <li>Проверяйте уровень заряда</li>
+                <li>
+                  Создавайте свои пресеты для разных напитков, или используйте
+                  готовые
+                </li>
+              </ul>
+            </div>
+            <div class="7-item-right">
+              <img src="img/s7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s8">
+        <img src="img/s10-bg.jpg" alt="" />
+        <h2 class="color-orange">
+          посмотрите короткое<br />
+          видео
+        </h2>
+        <iframe
+          width="480"
+          height="270"
+          src="https://www.youtube.com/embed/jL-EPgcxYo4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="reolader form-item">
+          <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+        </div>
+      </section>
+
+      <section class="s9">
+        <div class="container">
+          <h2 class="color-orange">кружка Незаменима!</h2>
+          <div class="s9-item">
+            <div class="s9-item-list">
+              <img src="img/s9-1.png" alt="" />
+              <p>На работе</p>
+            </div>
+            <div class="s9-item-list">
+              <img src="img/s9-2.png" alt="" />
+              <p>В дороге</p>
+            </div>
+            <div class="s9-item-list">
+              <img src="img/s9-3.png" alt="" />
+              <p>На прогулке</p>
+            </div>
+            <div class="s9-item-list">
+              <img src="img/s9-4.png" alt="" />
+              <p>На охоте</p>
+            </div>
+            <div class="s9-item-list">
+              <img src="img/s9-5.png" alt="" />
+              <p>В походе</p>
+            </div>
+            <div class="s9-item-list">
+              <img src="img/s9-6.png" alt="" />
+              <p>На рыбалке</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s10">
+        <div class="container">
+          <h2 class="color-orange">
+            Инновационные <br />
+            технологии<br />
+            для Вашего комфорта!
+          </h2>
+        </div>
+        <div class="s10-slider">
+          <div class="s10-slide">
+            <img src="img/s10-1.svg" alt="" />
+            <div class="s10-title">Точный контроль температуры</div>
+            <div class="s10-subtitle">
+              7 встроенных прецизионных датчиков обеспечивают точный контроль
+              температуры,относительно уровня жидкости
+            </div>
+          </div>
+          <div class="s10-slide">
+            <img src="img/s10-2.svg" alt="" />
+            <div class="s10-title">Технологичная батарея</div>
+            <div class="s10-subtitle">
+              Последние достижения в области технологии батарей дают Вам больше
+              времени насладиться горячим напитком
+            </div>
+          </div>
+          <div class="s10-slide">
+            <img src="img/s10-3.svg" alt="" />
+            <div class="s10-title">Полная согласованность</div>
+            <div class="s10-subtitle">
+              Конвекционный ток на молекулярном уровнезаставляет циркулировать
+              жидкость сверху вниз, чтобы сохранить однородность температуры
+            </div>
+          </div>
+          <div class="s10-slide">
+            <img src="img/s10-4.svg" alt="" />
+            <div class="s10-title">Автоматический сон</div>
+            <div class="s10-subtitle">
+              Кружка "просыпается", когда в неё вливают горячую жидкость, и
+              "спит", когда она пустая или не используется
+            </div>
+          </div>
+          <div class="s10-slide">
+            <img src="img/s10-5.svg" alt="" />
+            <div class="s10-title">память темперауры</div>
+            <div class="s10-subtitle">
+              Помнит вашу последнюю предпочтительную температуру питья, избавляя
+              от необходимости каждый раз задавать её заново
+            </div>
+          </div>
+          <div class="s10-slide">
+            <img src="img/s10-6.svg" alt="" />
+            <div class="s10-title">Всегда как новая</div>
+            <div class="s10-subtitle">
+              Обновленная прошивка и программное обеспечение делают Вашу кружку
+              умнее, чем когда-либо
+            </div>
+          </div>
+        </div>
+
+        <div class="reolader form-item">
+          <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+        </div>
+      </section>
+
+      <section class="s11">
+        <h2 class="color-orange">Ember Travel</h2>
+        <div class="s11-subtitle">умная термокружка</div>
+        <div class="s11-inner" id="selectLetter">
+          <div class="s11-height">20 см</div>
+          <div class="s11-width">8 см</div>
+          <div class="s11-item">
+            <div class="s11-item-btn pulse" data-filter="a">A</div>
+            <div class="s11-item-btn pulse" data-filter="b">B</div>
+            <div class="s11-item-btn pulse" data-filter="c">C</div>
+            <div class="s11-item-btn pulse" data-filter="d">D</div>
+            <div class="s11-item-btn pulse" data-filter="e">E</div>
+            <div class="s11-item-btn pulse" data-filter="f">F</div>
+          </div>
+
+          <div class="s11-item-block show" data-cat="a">
+            <div class="s11-item-text">
+              <div class="s11-item-number">А</div>
+              Герметичная крышка на 360°
+            </div>
+          </div>
+
+          <div class="s11-item-block" data-cat="b">
+            <div class="s11-item-text">
+              <div class="s11-item-number">B</div>
+              Премиальное мягкое на ощупь покрытие
+            </div>
+          </div>
+          <div class="s11-item-block" data-cat="c">
+            <div class="s11-item-text">
+              <div class="s11-item-number">C</div>
+              Стенки из нержавеющей стали
+            </div>
+          </div>
+          <div class="s11-item-block" data-cat="d">
+            <div class="s11-item-text">
+              <div class="s11-item-number">D</div>
+              Светодиодный дисплей скрытый до тех пор, пока не загорится
+            </div>
+          </div>
+          <div class="s11-item-block" data-cat="e">
+            <div class="s11-item-text">
+              <div class="s11-item-number">E</div>
+              Семь прецизионных датчиков для определения температуры и уровня
+              жидкости
+            </div>
+          </div>
+          <div class="s11-item-block" data-cat="f">
+            <div class="s11-item-text">
+              <div class="s11-item-number">F</div>
+              Двухдиапазонный микропроцессор с передовой технологией
+              литий-ионных аккумуляторов
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s12">
+        <div class="container">
+          <h2 class="color-orange">Характеристики <br />устройства</h2>
+          <img class="s12-img" src="img/s12-1.png" alt="" />
+        </div>
+
+        <div class="s12-list">
+          <table cellpadding="5">
+            <tr>
+              <td colspan="2"><b>Дисплей:</b>Цифровой</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <b>Температура нагрева: </b> От 48,9˚C до 63˚C
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Интерфейсы: </b> От 48,9˚C до 63˚C</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Приложение: </b> Есть</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Совместимость:</b> Android и iOS</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Объём:</b> 355 мл</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Водостойкость:</b> IPX7</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Время автономной работы:</b>до 24 часов</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Вес:</b> 454 г</td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>Габаритные размеры:</b> 200 х 79 х 70 мм</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <b>Особенности:</b> Регулятор температуры,<br />
+                360 ° герметичная крышка
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="s12-footer">
+          <img class="s12-img-footer" src="img/s12-2.png" alt="" />
+        </div>
+      </section>
+
+      <section class="s13">
+        <h2>
+          <span class="color-pink">ОСТЕРЕГАЙТЕСЬ <br />ПОДДЕЛОК!</span>
+        </h2>
+        <div class="s13-subtitle">
+          Оригинальную термокружку <br />Ember Travel можно приобрести только
+          здесь - на сайте официального дистрибьютора!
+        </div>
+        <div class="s13-item">
+          <div class="s13-item-list">
+            <img src="img/s13-1.jpg" alt="" />
+            <p>Сертефикат соответствия</p>
+          </div>
+          <div class="s13-item-list">
+            <img src="img/s13-2.jpg" alt="" />
+            <p>Сертефикат безопасности</p>
+          </div>
+          <div class="s13-item-list">
+            <img src="img/s13-3.jpg" alt="" />
+            <p>Гарантия производителя</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s14">
+        <div class="s14-block">
+          <h4>
+            К сожалению, в связи с высоким спросом мы вынуждены <br />ввести
+            ограничение:
+          </h4>
+          <div class="s14-subtitle">
+            не более <span class="color-orange">3</span> штук в
+            <span class="color-orange">1</span> руки!
+          </div>
+          <div class="container">
+            <div class="s14-item">
+              <div class="s14-item-list">
+                <p>3</p>
+                <div class="s14-item-img">
+                  <img src="img/s14-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" class="form-block-item">
+          <h2 class="color-orange">
+            Акция действует <br />до
+            <span id="doc_date"></span>
+          </h2>
+          <div class="container">
+            <img class="s14-form-img" src="img/s14-bg.png" alt="" />
+          </div>
+          <div class="form-wrapper">
+            <div class="container">
+              <form action="#" method="post" class="orderformcdn" id="form">
+                <div class="price">
+                  <div class="price-old">
+                    <div class="price-text">Цена сегодня:</div>
+                    <div class="price-old-val oldproductsum">4 450 ₽</div>
+                  </div>
+                  <div class="price-new">
+                    <span class="price-new-val productsum">2990 ₽</span>
+                  </div>
+                </div>
+
+                <div class="reolader form-item">
+                  <a href="#form" class="form-btn mm_button">
+                    Заказать термокружку
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="timer">
+              <div class="timer-title">ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</div>
+              <div class="countbox"></div>
+              <div class="timer-body">
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Часов</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Минут</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Секунд</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-count">Политика конфиденциальности</div>
+          </div>
+        </form>
+      </section>
+
+      <section class="s15">
+        <h2 class="color-orange">
+          Отзывы <br />
+          покупателей
+        </h2>
+        <div class="container">
+          <div class="s15-slider">
+            <div class="s15-block white-block">
+              <div class="name-block">
+                <img src="img/icon-s15-1.png" alt="" />
+                <div class="block-name">
+                  <div class="s15-name-header">
+                    <p>Валерия</p>
+                  </div>
+                  <span>35 лет</span>
+                </div>
+              </div>
+
+              <img class="s15-img" src="img/s15-1.jpg" alt="" />
+
+              <p class="s15-text">
+                Работаю персональным тренером по сноуборду на горнолыжном
+                курорте. Порой бывает по три тренировки подряд, погреться пойти
+                некогда. Спасает Ember Travel. Наливаю кофе в начале дня и
+                наслаждаюсь любимым напитком, когда мне это необходимо. Всех
+                клиентов уже тоже подсадила, все с этой кружкой ходят. Она очень
+                компактная, легкая, стильно выглядит. Так что, это, наверное
+                лучшее мое приобретение за 2020 год. Плюс, крышка
+                открывается-закрывается без усилий, не надо снимать перчатки, и
+                ничего не протекает никогда. Это тоже огромный плюс, по
+                сравнению, например, с термосом. В общем, ни дня без Travel Mug!
+                Спасибо!
+              </p>
+            </div>
+
+            <div class="s15-block white-block">
+              <div class="name-block">
+                <img src="img/icon-s15-2.png" alt="" />
+                <div class="block-name">
+                  <div class="s15-name-header">
+                    <p>Виталий</p>
+                  </div>
+                  <span>51 год</span>
+                </div>
+              </div>
+              <img class="s15-img" src="img/s15-2.jpg" alt="" />
+
+              <p class="s15-text">
+                Я заядлый рыбак, без термоса в нашем деле никуда, особенно
+                зимой. Термос служил верой и правдой 10 лет, но начал протекать.
+                Я стал смотреть в интернете замену и наткнулся на Ember Travel.
+                Отзывы очень хорошие, товар понравился, решил заказать. И не
+                ошибся! Кружка пришла быстро. Сделана очень добротно. Тепло
+                сохраняет гораздо дольше термоса. На день точно хватает. В
+                случае чего, можно подогреть напиток, если нужно. Можно и воду
+                подогреть. А если стоит на зарядке, то вообще бесконечно можно
+                держать температуру напитка, какая нужна. Есть еще приложение,
+                говорят, но я с технологиями не очень, поэтому пользуюсь так.
+                Благо, все понятно и удобно. Коллегам-рыбакам и охотникам смело
+                рекомендую!
+              </p>
+            </div>
+
+            <div class="s15-block white-block">
+              <div class="name-block">
+                <img src="img/icon-s15-3.png" alt="" />
+                <div class="block-name">
+                  <div class="s15-name-header">
+                    <p>Сергей</p>
+                  </div>
+                  <span>35 лет</span>
+                </div>
+              </div>
+
+              <img class="s15-img" src="img/s15-3.jpg" alt="" />
+
+              <p class="s15-text">
+                Приходится много ездить по работе. Ember Travel всегда со мной.
+                С утра сварил кофе, кинул в машину кружку и в течение дня пьешь.
+                Когда заезжаю в офис, подзаряжаю девайс, делаю, например чай, и
+                опять, горячий напиток всегда со мной. Это очень приятно и дарит
+                чувство комфорта даже вдали от дома. Могу, например, пойти по
+                делам, а, возвращаясь обратно, через приложение поставить
+                подогрев. И, когда я сяду в машину, напиток будет той самой
+                температуры, какую я люблю. До чего дошел прогресс! Еще радует
+                конструкция крышки с push-to-open механизмом. Когда едешь по
+                ухабам, можно спокойно промочить горло, и ничего не прольется.
+                Спасибо Вам, я доволен!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s16">
+        <div class="container">
+          <h2>
+            <span class="color-orange">КАК ЗАКАЗАТЬ</span>
+
+            <br />
+            ТОВАР?
+          </h2>
+          <div class="s16-list">
+            <div class="s16-list-item">
+              <img src="img/s16-1.svg" alt="" />
+
+              <p>
+                Оставьте заявку на заказ через форму ниже
+                <span>1</span>
+              </p>
+            </div>
+            <div class="s16-list-item">
+              <img src="img/s16-2.svg" alt="" />
+
+              <p>Мы свяжемся с вами для подтверждения заказа <span>2</span></p>
+            </div>
+            <div class="s16-list-item">
+              <img src="img/s16-3.svg" alt="" />
+
+              <p>
+                Через несколько дней мы доставим вам товар
+                <span>3</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s1">
+        <div class="s1-title">
+          <h1 class="color-orange">Ember Travel</h1>
+          <p class="s1-subtitle">умная термокружка</p>
+        </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/icon-smartphone.svg" alt="" />
+            <div class="s1-list-text">
+              Управляйте<br />
+              со смартфона
+            </div>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/icon-canada-flag.svg" alt="" />
+            <div class="s1-list-text">
+              Made <br />
+              in Canada
+            </div>
+          </div>
+        </div>
+
+        <div class="discount">
+          <div class="discount-top">-50%</div>
+          <div class="discount-bottom">хит продаж!</div>
+        </div>
+
+        <div class="reolader form-item">
+          <a href="#form" class="form-btn mm_button"> Заказать термокружку </a>
+        </div>
+
+        <div class="s1-list-footer">
+          <div class="s1-list-item-footer">
+            <img src="img/s16-1.svg" alt="" />
+            <p>Держит температуру до 24 часов</p>
+            <img src="img/icon-true.svg" alt="" />
+          </div>
+          <div class="s1-list-item-footer">
+            <img src="img/s16-2.svg" alt="" />
+            <p>Может подогреть или охладить напиток</p>
+            <img src="img/icon-true.svg" alt="" />
+          </div>
+          <div class="s1-list-item-footer">
+            <img src="img/s16-3.svg" alt="" />
+            <p>Герметичная крышка push-to-open на 360°</p>
+            <img src="img/icon-true.svg" alt="" />
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <div class="container">
+            <form action="#" method="post" class="orderformcdn" id="form">
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option selected disabled>Страна</option>
+                  <option value="RU">Россия</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Имя"
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Телефон"
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <div class="price">
+                <div class="price-old">
+                  <div class="price-old-val oldproductsum">4 450 ₽</div>
+                </div>
+                <div class="price-new">
+                  <span class="price-new-val productsum">2990 ₽</span>
+                </div>
+              </div>
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  onclick="checkFields(event, this);"
+                >
+                  Заказать термокружку
+                </button>
+                <div class="ajax_loader_block">
+                  <img
+                    class="ajax_loader"
+                    src="img/ajax-loader.gif"
+                    alt="Идет отправка данных"
+                  />
+                  <span class="ajax_loader">Идет отправка данных</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="timer">
+            <div class="timer-title">ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-count">Политика конфиденциальности</div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      date();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+
+          return false;
+        });
+
+        $(".s3-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-icon_left" src="img/BTN_arrow_back.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right" src="img/BTN_arrow_next.png" alt="">',
+        });
+
+        $(".s10-slider").slick({
+          dots: false,
+
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true,
+
+          prevArrow:
+            '<img class="slider-icon_left_green" src="img/BTN_arrow_back_green.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right_green" src="img/BTN_arrow_next_green.png" alt="">',
+        });
+
+        $(".s15-slider").slick({
+          dots: false,
+          dotsClass: "header-dots",
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-icon_left"  src="img/BTN_arrow_back_green.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right" src="img/BTN_arrow_next_green.png" alt="">',
+        });
+
+        let filter = $("[data-filter]");
+
+        filter.on("click", function (event) {
+          event.preventDefault();
+
+          let cat = $(this).data("filter");
+
+          $("[data-cat]").each(function () {
+            let workCat = $(this).data("cat");
+
+            if (workCat != cat) {
+              $(this).removeClass("show");
+            } else {
+              $(this).addClass("show");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1344 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, 
+q:before, q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, select, input, button {
+	outline: none;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: underline;
+	-webkit-text-decoration-skip: objects;
+}
+
+select, input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/fonts/MuseoSansCyrl-300.woff') format('woff'),
+        url('https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/fonts/MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/fonts/MuseoSansCyrl-700.woff') format('woff'),
+        url('https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/fonts/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* styles */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	min-width: 320px;
+	background: #fff;
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	color: #222;
+	cursor: default;
+}
+
+header, section, footer {
+	margin: 0 auto;
+	max-width: 1920px;
+	overflow: hidden;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 1170px;
+	position: relative;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+b {
+	font-weight: 700;
+}
+
+/* titles */
+
+h2 {
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* slider buttons */
+
+.owl-prev, 
+.owl-next {
+	width: 44px;
+	height: 54px;
+	background-image: url(../images/slider__arrows.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.owl-prev {
+	background-position: left center;
+	left: 0;
+}
+
+.owl-next {
+	background-position: right center;
+	right: 0;
+}
+
+/* header */
+
+.header_section .title_block {
+	padding: 15px 0;
+	background: #fff;
+}
+
+.header_section .title_block h1 {
+	font-size: 32px;
+	line-height: 36px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.header_section .title_block h1 span{
+	color: #cf0074;
+}
+
+.flag:after{
+	content: '';
+	width: 67px;
+	height: 47px;
+	background: url(../images/flag.png) 50% 50% no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -3px 0 0 15px;
+}
+
+.header_section .content_block {
+	height: 574px;
+	background: #0d0d0d url(../images/desctop__header_bg.jpg) right top no-repeat;
+}
+
+.header_section .content_block .info_block {
+	padding: 90px 0 0;
+	color: #fff;
+	width: 410px;
+	text-align: center;
+}
+
+.logo{
+	margin-bottom: 40px;
+}
+
+.logo>img {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+.logo>p{
+	font-size: 17px;
+	color: #fff;
+}
+
+.logo:after{
+	content: '';
+	margin: 15px auto 0;
+	width: 300px;
+	height: 4px;
+	display: block;
+	border-top: 1px solid rgba(221,219,220,0.5);
+	border-bottom: 1px solid rgba(221,219,220,0.5);
+}
+
+.header_section .content_block h4 {
+	font-size: 44px;
+	line-height: 50px;
+	color: #d6af28;
+}
+
+.header_section .content_block .discount {
+	margin: 5px 0;
+	font-size: 120px;
+	line-height: 120px;
+	color: #e4003f;
+}
+
+.ofr_bull{
+	font-size: 22px;
+	color: #fff;
+	width: 300px;
+	margin: 0 auto 40px;
+}
+.ofr_bull>li{
+	position: relative;
+	padding-left: 35px;
+	font-size: 18px;
+	margin-bottom: 12px;
+	text-align: left;
+}
+.ofr_bull>li:last-child{
+	margin-bottom: 0;
+}
+.ofr_bull>li:before{
+	content: '';
+	width: 21px;
+	height: 21px;
+	background: url(../images/check.png) 50% 50% no-repeat;
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+
+.sale{
+	width: 150px;
+	height: 150px;
+	background: #cf0074;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px rgba(207,0,116,0.2);
+	position: absolute;
+	top: 80px;
+	left: 500px;
+	color: #fff;
+	text-align: center;
+	padding-top: 38px;
+	font-size: 15px;
+	line-height: 1.2em;
+}
+.sale:before{
+	content: '';
+	width: 140px;
+	height: 140px;
+	border: 3px dotted #e780ba;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	z-index: 1;
+}
+.sale>p{
+	position: relative;
+	z-index: 2;
+}
+.sale>p>span{
+	display: block;
+	font-size: 53px;
+	line-height: 50px;
+}
+
+.header_section .content_block .button,
+.size-table .button  {
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+	height: 70px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #d6af28;
+	font-size: 20px;
+	line-height: 70px;
+	letter-spacing: 1px;
+	color: #222;
+	text-decoration: none;
+	position: relative;
+}
+
+.header_section .content_block .button:hover,
+.size-table .button:hover {
+	background: #e5bc2d;
+}
+
+.header_section .content_block .button:active,
+.size-table .button:active {
+	top: 1px;
+}
+
+
+/* catalog */
+.catalog_section {
+	padding: 40px 0 20px;
+	background: #f2f6f9;
+	overflow-y: hidden;
+}
+
+.gallery{
+	font-size: 0;
+	text-align: center;
+	margin: 0 -15px 50px;
+}
+.gallery>img{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 250px;
+	margin: 0 5px 10px;
+}
+
+
+.catalog_section h2 {
+	margin: 0 0 40px;
+}
+
+.catalog_section h2:before, 
+.catalog_section h2:after {
+	display: inline-block;
+	vertical-align: middle;
+	content: '';
+	margin: -8px 25px 0;
+	width: 240px;
+	height: 2px;
+	border-top: 1px solid #dddbdc;
+	border-bottom: 1px solid #dddbdc;
+}
+
+.catalog_section .female_models {
+	margin: 0 0 30px;
+}
+
+.catalog_section h3 {
+	margin: 0 0 25px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.catalog_section h3 span {
+	border-bottom: 2px solid #329fb6;
+}
+
+.products_list{
+	text-align: center;
+	margin: 0 -25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.products_list .product_item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px 30px;
+	padding: 0 0 30px;
+	width: 370px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.catalog_section .product_item .slider {
+	margin: 0 0 15px;
+	border-bottom: 2px solid #f2f6f9;
+}
+
+.catalog_section .product_item .discount {
+	padding: 5px 8px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #d6af28;
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 10;
+}
+
+.catalog_section .product_item .title_block {
+	margin: 0 20px 12px;
+	text-align: center;
+}
+
+.catalog_section .product_item .title_block h4 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.1em;
+}
+
+.vendor_code{
+	color: #a8a9aa;
+	font-size: 18px;
+	line-height: 1.1em;
+	margin-bottom: 15px;
+}
+
+.catalog_section .product_item .title_block p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #777;
+}
+
+.catalog_section .product_item .price_block {
+	margin: 0 20px 20px;
+	text-align: center;
+}
+
+.catalog_section .product_item .price_item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.catalog_section .product_item .price_item.old {
+	margin: 0 15px 0 0;
+	text-decoration: line-through;
+	font-size: 22px;
+}
+
+.catalog_section .product_item .price_item.new {
+	font-size: 30px;
+	color: #cf0074;
+}
+
+.char{
+	padding: 0 20px;
+	margin-bottom: 25px;
+}
+.char>li{
+	padding: 10px 20px;
+	border-top: 2px dotted #e3e3e4;
+	text-align: right;
+	font-size: 18px;
+	line-height: 1.1em;
+}
+.char>li>span{
+	float: left;
+	color: #a8a9aa;
+}
+.char>li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.catalog_section .product_item .button {
+	display: block;
+	margin: 0 auto;
+	width: 310px;
+	height: 56px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #329fb6;
+	font-size: 22px;
+	line-height: 56px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+}
+
+.catalog_section .product_item .button:hover {
+	background: #36a9c1;
+}
+
+.catalog_section .product_item .button:active {
+	top: 1px;
+}
+.prod {
+    background: #9e9e9e !important;
+}
+
+/* size table */
+
+.size-table {
+    padding: 40px 0;
+}
+.size-table h2 {
+    margin-bottom: 30px;
+}
+.cont-table {
+    margin-bottom: 30px;
+}
+.scroll-img {
+    display: none;
+    margin: 10px auto 30px;
+    width: 40px;
+}
+.table-size {
+    width: 940px;
+    text-align: center;
+    font-size: 16px;
+}
+.table-size tr {
+    background: #fff;
+}
+.table-size tr:nth-child(odd) {
+    background: #eaf1f7;
+}
+
+.table-size tr th {
+    border-right: 1px solid #c59901;
+    padding: 10px 0; 
+    font-weight: 700;
+}
+.table-size tr td {
+    border-right: 1px solid #d1dbe4;
+    padding: 7px 0; 
+}
+.table-size tr th:last-child,
+.table-size tr td:last-child {
+    border-right: none;
+}
+.table-size tr th {
+    background: #d6af28;
+}
+.table-size tr td:first-child,
+.table-size tr th:first-child {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 700;
+    width: 190px;
+}
+.size-table h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.howto {
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+.howto li {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    font-size: 16px;
+    position: relative;
+}
+.howto li div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ccbbaf;
+    margin: 0 auto 16px;
+    background: url(https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/images/meas1.png) no-repeat 0 0 / cover;
+}
+.howto li:nth-child(2) div {
+    background-image: url(https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/images/meas2.png);
+}
+.howto li:nth-child(3) div {
+    background-image: url(https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/images/meas3.png);
+}
+.howto span {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color:#fff;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 700;
+    background: #d6af28;
+    position: absolute;
+    top: 14px;
+    right: 61px;
+}
+.howto p {
+    padding: 0 24px;
+}
+.helptext {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* gallery */
+
+.gallery_section {
+	padding: 40px 0;
+	background: #64574e url(https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/images/desctop__gallery_bg.jpg) center top no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.gallery_section h2 {
+	margin: 0 0 40px;
+	color: #fff;
+}
+
+.gallery_section h2:before, 
+.gallery_section h2:after {
+	display: inline-block;
+	vertical-align: middle;
+	content: '';
+	margin: -8px 25px 0;
+	width: 240px;
+	height: 2px;
+	border-top: 1px solid #dddbdc;
+	border-bottom: 1px solid #dddbdc;
+}
+
+.gallery_section img {
+	display: block;
+}
+
+/* order info */
+
+.order_info_section {
+	height: 446px;
+	overflow: hidden;
+	padding: 40px 0 0;
+	background: url(../images/order_bg.jpg) 50% 0% no-repeat;
+}
+
+.order_info_section .wrapper{
+	padding: 0 150px 0 640px;
+}
+
+.order_info_section .product{
+	display: none;
+}
+
+.order_info_section h2 {
+	margin: 0 0 35px;
+	text-align: left;
+}
+
+.order_info_section h2:after {
+	display: block;
+	content: '';
+	margin: 10px 0 0;
+	width: 315px;
+	height: 2px;
+	border-top: 1px solid #dddbdc;
+	border-bottom: 1px solid #dddbdc;
+}
+
+.order_info_section .info_item {
+	display: table;
+	margin: 0 0 30px;
+	width: 100%;
+}
+
+.order_info_section .info_item:last-child {
+	margin: 0;
+}
+
+.order_info_section .info_item .icon_block {
+	display: table-cell;
+	vertical-align: middle;
+	width: 70px;
+}
+
+.order_info_section .info_item img {
+	display: block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.order_info_section .info_item p {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 20px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* reviews */
+
+.reviews_section {
+	padding: 40px 0;
+	background: #f2f6f9;
+}
+
+.reviews_section h2{
+	margin-bottom: 20px;
+}
+.reviews_section h2:before, 
+.reviews_section h2:after {
+	display: inline-block;
+	vertical-align: middle;
+	content: '';
+	margin: -8px 25px 0;
+	width: 240px;
+	height: 2px;
+	border-top: 1px solid #dddbdc;
+	border-bottom: 1px solid #dddbdc;
+}
+
+.reviews_section .description {
+	margin: 0 auto 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.reviews_section .description>span{
+	color: #d6af28;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.reviews_section .rate{
+	margin: 0 0 40px;
+	text-align: center;
+	font-size: 18px;
+}
+.reviews_section .rate:before{
+	content: '';
+	width: 127px;
+	height: 21px;
+	background: url(../images/rate.png) 50% 50% no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -2px 10px 0 0;
+}
+
+.reviews_section .review_item{
+	width: 270px;
+	margin: 0 auto;
+}
+
+.reviews_section .review_item img {
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.reviews_section .review_item .text_block>span{
+	font-size: 18px;
+	line-height: 1.2em;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 14px;
+}
+
+.reviews_section .review_item .text_block>span:after{
+	content: '';
+	margin: 12px 0 0;
+	height: 2px;
+	border-top: 1px solid #dddbdc;
+	border-bottom: 1px solid #dddbdc;
+	display: block;
+}
+
+.reviews_section .review_item .text_block {
+	padding: 15px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+	background: #fff;
+	text-align: center;
+}
+
+.reviews_section .review_item .author_info {
+	margin: 12px 0 0;
+	color: #a8a9aa;
+	font-size: 16px;
+}
+
+.reviews_section .review_item p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.reviews_section .owl-prev, 
+.reviews_section .owl-next {
+	background-color: rgba(255,255,255,0.8);
+	top: 125px;
+}
+
+.reviews_section .owl-prev {
+	-webkit-border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.reviews_section .owl-next {
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+
+
+
+/* order */
+.order_section .content_block .input {
+	display: block;
+	margin: 0 auto 20px;
+	padding: 0 20px;
+	width: 100%;
+	height: 60px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #222;
+	text-align: center;
+	-ms-text-align-last: center;
+	-moz-text-align-last: center;
+	text-align-last: center;
+}
+
+.order_section .content_block .input::-webkit-input-placeholder {
+	opacity: 1;
+	color: #222;
+}
+
+.order_section .content_block .input:-moz-placeholder {
+	opacity: 1;
+	color: #222;
+}
+
+.order_section .content_block .input::-moz-placeholder {
+	opacity: 1;
+	color: #222;
+}
+
+.order_section .content_block .input:-ms-input-placeholder {
+	opacity: 1;
+	color: #222;
+}
+
+.order_section .content_block .input:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+.order_section .content_block .input:focus:-moz-placeholder {
+	opacity: 0;
+}
+
+.order_section .content_block .input:focus::-moz-placeholder {
+	opacity: 0;
+}
+
+.order_section .content_block .input:focus:-ms-input-placeholder {
+	opacity: 0;
+}
+
+.order_section .content_block .button {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #d6af28;
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 70px;
+	letter-spacing: 1px;
+	color: #222;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+}
+
+.order_section .content_block .button:hover {
+	background: #e5bc2d;
+}
+
+.order_section .content_block .button:active {
+	top: 1px;
+}
+
+.order_section .content_block .info_block{
+	padding-top: 40px;
+}
+.order_section .logo{
+	margin-bottom: 30px;
+}
+.action{
+	font-size: 17px;
+	line-height: 1.3em;
+	margin-bottom: 25px;
+}
+.action>span{
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 8px;
+}
+.action>p>span{
+	color: #d6af28;
+	display: block;
+}
+
+
+/* footer */
+.footer_section {
+	padding: 25px 0;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.footer_section img {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.footer_section a {
+	color: #111;
+}
+
+.footer_section a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1169px) {
+
+	/* styles */
+
+	.wrapper {
+		width: 660px;
+	}
+
+	/* header */
+
+	.header_section .content_block {
+		background-image: url(../images/tablet__header_bg.jpg);
+	}
+
+	.header_section .content_block .info_block {
+		width: 300px;
+	}
+
+	.header_section .title_block h1{
+		letter-spacing: 2px;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.sale{
+		top: 300px;
+		left: 440px;
+	}
+
+
+	/* catalog */
+
+	.gallery{
+		margin: 0 0 40px;
+	}
+
+	.catalog_section h2:before, 
+	.catalog_section h2:after {
+		width: 100px;
+	}
+	.products_list{
+		margin: 0;
+	}
+	.products_list .product_item{
+		width: 300px;
+		margin: 0 10px 20px;
+	}
+
+	.catalog_section .product_item .title_block h4{
+		font-size: 24px;
+	}
+	.vendor_code{
+		font-size: 16px;
+	}
+	.char > li{
+		font-size: 16px;
+	}
+	.catalog_section .product_item .price_item.old{
+		font-size: 20px;
+	}
+	.catalog_section .product_item .price_item.new{
+		font-size: 28px;
+	}
+	.catalog_section .product_item .button{
+		width: 260px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
+	}
+
+	/* gallery */
+
+	.gallery_section {
+		background-image: url(https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/images/tablet__gallery_bg.jpg);
+	}
+
+	.gallery_section h2:before, 
+	.gallery_section h2:after {
+		width: 100px;
+	}
+
+	/* order info */
+
+	.order_info_section {
+		padding: 40px 0;
+		height: auto;
+		background: none;
+	}
+
+	.order_info_section .wrapper{
+		padding: 0 10px;
+	}
+
+	.order_info_section .product{
+		display: block;
+		margin: 0 auto 30px;
+		border-radius: 10px;
+	}
+
+	.order_info_section .image, .pi2 {
+		display: none;
+	}
+
+	.order_info_section .content_block {
+		padding: 0;
+	}
+
+	.order_info_section h2 {
+		margin: 0 0 40px;
+		text-align: center;
+	}
+
+	.order_info_section h2:before, 
+	.order_info_section h2:after {
+		display: inline-block;
+		vertical-align: middle;
+		content: '';
+		margin: -8px 25px 0;
+		width: 70px;
+		height: 2px;
+		border-top: 1px solid #dddbdc;
+		border-bottom: 1px solid #dddbdc;
+	}
+
+	.order_info_section .info_item {
+		margin: 0 0 20px;
+	}
+
+	.info_list{
+		max-width: 440px;
+		margin: 0 auto;
+	}
+
+	/* reviews */
+
+	.reviews_section h2:before, 
+	.reviews_section h2:after {
+		width: 70px;
+	}
+
+	.reviews_section .review_item{
+		width: 300px;
+	}
+
+	/* order */
+	.order_section .title_block h1{
+		font-size: 25px;
+		line-height: 28px;
+	}
+
+}
+
+@media screen and (max-width: 659px) {
+	
+	/* styles */
+
+	.wrapper {
+		max-width: 520px;
+		width: unset;
+	}
+
+	/* titles */
+
+	h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	/* header */
+
+	.header_section .title_block {
+		padding: 15px 0;
+	}
+
+	.header_section .title_block h1 {
+		font-size: 20px;
+		line-height: 26px;
+		letter-spacing: normal;
+		text-align: right;
+		padding-right: 80px;
+		position: relative;
+		text-transform: none;
+	}
+	.flag:after{
+		content: '';
+		position: absolute;
+		top: 50%;
+		margin-top: -24px;
+		right: 0;
+	}
+
+	.header_section .content_block {
+		height: auto;
+		background: url(../images/mobile__header_bg.jpg) 50% 0% no-repeat, url(../images/pat.png) 50% 50% repeat;
+	}
+
+	.sale{
+		left: 5px;
+		top: 40px;
+		width: 96px;
+		height: 96px;
+		box-shadow: 0 0 0 6px rgba(207,0,116,0.2);
+		padding-top: 18px;
+	}
+	.sale::before{
+		width: 90px;
+		height: 90px;
+		top: 3px;
+		left: 3px;
+	}
+	.sale > p > span{
+		font-size: 28px;
+		line-height: 34px;
+	}
+	.sale>p{
+		font-size: 14px;
+		line-height: 1.1em;
+	}
+
+	.header_section .content_block .info_block {
+		padding: 290px 0 40px;
+		width: 100%;
+	}
+
+	.header_section .content_block h4 {
+		font-size: 42px;
+		line-height: 48px;
+	}
+
+
+	/* catalog */
+	.gallery > img{
+		margin: 0 auto 5px;
+	}
+
+
+	.catalog_section {
+		padding: 30px 0 10px;
+	}
+
+	.catalog_section h2 {
+		margin: 0 0 30px;
+	}
+
+	.catalog_section h2:before, 
+	.catalog_section h2:after {
+		display: none;
+	}
+
+	.catalog_section h3 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.catalog_section .product_item {
+		margin: 0 0 20px;
+	}
+
+	.catalog_section .product_item:nth-child(3n) {
+		margin: 0 0 20px;
+	}
+
+	/* gallery */
+
+	.gallery_section {
+		padding: 30px 0;
+		background-image: url(https://scarves-2.promo2020.ru/assets_page/c043a3e02146ee289c197bb3217406f0598920a2/images/mobile__gallery_bg.jpg);
+	}
+
+	.gallery_section h2 {
+		margin: 0 0 30px;
+	}
+
+	.gallery_section h2:before, 
+	.gallery_section h2:after {
+		display: none;
+	}
+
+	/* order info */
+
+	.order_info_section {
+		padding: 30px 0;
+	}
+
+	.order_info_section h2 {
+		margin: 0 0 30px;
+	}
+
+	.order_info_section h2:before, 
+	.order_info_section h2:after {
+		display: none;
+	}
+
+	/* reviews */
+
+	.reviews_section {
+		padding: 30px 0;
+	}
+
+	.reviews_section h2:before, 
+	.reviews_section h2:after {
+		display: none;
+	}
+
+	.reviews_section .description {
+		margin: 10px auto 30px;
+	}
+
+	.catalog_section .product_item{
+		margin: 0 auto 20px;
+	}
+
+	.reviews_section .rate::before{
+		display: block;
+		margin: 0 auto 2px;
+	}
+
+	/* order */
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.gallery img {
+		max-width: 210px;
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	/* styles */
+
+	.wrapper {
+		max-width: 480px;
+		width: unset;
+	}
+
+	
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.gallery img {
+		max-width: 160px;
+	}
+}
+
+@media screen and (max-width: 392px) {
+	
+	/* styles */
+
+	.wrapper {
+		max-width: 380px;
+		width: unset;
+	}
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.gallery img {
+		max-width: 160px;
+	}
+}

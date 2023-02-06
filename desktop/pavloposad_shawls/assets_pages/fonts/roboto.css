@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin'), local('Roboto-Thin'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotothin.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotothin.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotothin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotothinitalic.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotothinitalic.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotothinitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotolight.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotolight.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotolightitalic.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotolightitalic.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotolightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/roboto.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/roboto.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoitalic.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoitalic.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotomedium.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotomedium.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotomediumitalic.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotomediumitalic.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotomediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotobold.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotobold.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotobolditalic.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotobolditalic.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoblack.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoblack.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoblackitalic.woff2') format('woff2'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoblackitalic.woff') format('woff'), url('https://scarves-2.promo2020.ru/assets_pages/fonts/robotoblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

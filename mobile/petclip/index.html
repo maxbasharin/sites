@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>PetClip</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/TimeCircles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/lt_landing_valid_form.js"></script>
+    <script type="text/javascript" src="js/lt_landing_script.js"></script>
+    <script type="text/javascript">
+      $jsonData = {
+        RU: {
+          currency: "\u0440.",
+          productsum: 1290,
+          oldproductsum: 2490,
+          delivery: 0,
+          totalsum: "1990",
+        },
+      };
+    </script>
+
+    <style>
+      .ajax_loader {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="s1">
+        <div class="s1-title">
+          <div class="s1-suptitle">Триммер для животных</div>
+          <h1>PetClip</h1>
+        </div>
+
+        <div class="sale-top">-50%</div>
+        <div class="sale-bottom">SALE!</div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-1.png" alt="" />
+            <p>Безопасно и удобно</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-2.png" alt="" />
+            <p>Быстрая и лёгкая стрижка</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-3.png" alt="" />
+            <p>Для всех животных!</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="form-wrapper">
+            <div class="timer-cont">
+              <h3>Акция закончится через:</h3>
+              <div class="el-timer"></div>
+            </div>
+
+            <div class="container">
+              <!--Container-->
+
+              <form method="post">
+                <div class="price">
+                  <div class="price-old">
+                    <div>Обычная цена:</div>
+                    <span class="price-old-val oldproductsum"><s></s></span>
+                  </div>
+
+                  <div class="price-line"></div>
+
+                  <div class="price-new">
+                    <div>Цена по акции:</div>
+                    <span class="price-new-val productsum color-pink"></span>
+                  </div>
+                </div>
+                <div class="form-item">
+                  <select
+                    name="country"
+                    class="countryselect form-control location"
+                  >
+                    <option selected value="RU">Россия</option>
+                    <option selected value="RU">Выберите вашу страну</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <input
+                    type="text"
+                    name="name"
+                    class="field form-control userneme"
+                    placeholder="Введите ваше имя"
+                    value=""
+                  />
+                </div>
+                <div class="form-item">
+                  <input
+                    type="text"
+                    name="phone"
+                    class="field form-control phone"
+                    placeholder="Введите ваш телефон"
+                    value=""
+                  />
+                </div>
+
+                <input
+                  type="hidden"
+                  name="productsum"
+                  class="productsum"
+                  value="1 руб."
+                />
+                <input type="hidden" name="delivery" value="0 руб." />
+                <input
+                  type="hidden"
+                  name="totalsum"
+                  class="productsum"
+                  value="1 руб."
+                />
+                <input type="hidden" name="user" value="1" />
+                <input
+                  type="hidden"
+                  name="address"
+                  value="Уточнить у покупателя"
+                />
+
+                <div class="reolader form-item">
+                  <button
+                    type="submit"
+                    class="form-btn mm_button"
+                    onclick="checkFields(event, this);"
+                  >
+                    Заказать сейчас
+                  </button>
+                  <div class="ajax_loader_block">
+                    <img
+                      class="ajax_loader"
+                      src="img/ajax-loader.gif"
+                      alt="Идет отправка данных"
+                    />
+                    <span class="ajax_loader">Идет отправка данных</span>
+                  </div>
+                </div>
+                <div class="form-count">
+                  *количество товара по акции
+                  <span class="color-pink">ограниченно!</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <img class="gif" src="gif/1.gif" alt="" />
+      </section>
+
+      <section class="s2">
+        <h2>
+          Свой груминг-салон<br />
+          <span>у вас дома!</span>
+        </h2>
+        <div class="container">
+          <div class="s2-item">
+            <div class="s2-item-list">
+              <img src="img/s2-1.png" alt="" />
+              <div class="s2-item-block">
+                <div class="s2-item-block-num">01</div>
+                <div class="s2-item-title">Быстрая и удобная стрижка</div>
+                <div class="s2-item-text">
+                  Фиксированное лезвие из нержавеющей стали и керамическое
+                  движущееся лезвие легко прорезают любые виды шерсти.
+                </div>
+              </div>
+            </div>
+            <div class="s2-item-list">
+              <img src="img/s2-2.png" alt="" />
+              <div class="s2-item-block">
+                <div class="s2-item-block-num">02</div>
+                <div class="s2-item-title">Безопасность</div>
+                <div class="s2-item-text">
+                  Керамическое лезвие также служит защитой, чтобы ваш питомец
+                  никогда не порезался.
+                </div>
+              </div>
+            </div>
+            <div class="s2-item-list">
+              <img src="img/s2-3.png" alt="" />
+              <div class="s2-item-block">
+                <div class="s2-item-block-num">03</div>
+                <div class="s2-item-title">Бесшумность</div>
+                <div class="s2-item-text">
+                  Триммер использует механизм с низкой вибрацией, который
+                  производит меньше, чем 50 дБ шума.
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+        </div>
+        <img class="img" src="img/s2-bg.jpg" alt="" />
+      </section>
+
+      <section class="s3">
+        <div class="container">
+          <h2>
+            Особенности<br />
+            <span>PetClip</span>
+          </h2>
+          <div class="s3-item">
+            <div class="s3-item-list">
+              <img src="img/s3-1.jpg" alt="" />
+              <div class="s3-list-title">Тонкая регулировка длины</div>
+              <div class="s3-list-text">
+                Встроенная ручка тонкой настройки предлагает 5 длин (0,8-2 мм)
+                для точной регулировки длины шерсти.
+              </div>
+            </div>
+            <div class="s3-item-list">
+              <img src="img/s3-2.jpg" alt="" />
+              <div class="s3-list-title">Насадки для длинных стрижек</div>
+              <div class="s3-list-text">
+                В комплекте 4 направляющих гребня крепления (3мм/6мм/9мм/12мм)
+                для более длинных срезов.
+              </div>
+            </div>
+
+            <div class="s3-item-list">
+              <img class="s3-img" src="img/s3-3.png" alt="" />
+            </div>
+
+            <div class="s3-item-list">
+              <img src="img/s3-4.jpg" alt="" />
+              <div class="s3-list-title">До 2 часов автономной работы</div>
+              <div class="s3-list-text">
+                Перезаряжаемая литий-ионная батарея работает до 120 минут на
+                одном заряде.
+              </div>
+            </div>
+            <div class="s3-item-list">
+              <img src="img/s3-5.jpg" alt="" />
+              <div class="s3-list-title">Универсальная зарядка</div>
+              <div class="s3-list-text">
+                USB-зарядка позволяет заряжать PetClip от мобильного адаптера,
+                компьютера или power-банка.
+              </div>
+            </div>
+            <div class="s3-item-list">
+              <img src="img/s3-6.jpg" alt="" />
+              <div class="s3-list-title">Работа от сети</div>
+              <div class="s3-list-text">
+                Триммер можно использовать во время зарядки, так что вам не
+                придется беспокоиться, что он перестанет работать.
+              </div>
+            </div>
+          </div>
+          <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+          <img class="img" src="img/s3-bg.png" alt="" />
+        </div>
+      </section>
+
+      <section class="s4">
+        <div class="container">
+          <h2>
+            Кому подходит<br />
+            <span>PetClip?</span>
+          </h2>
+          <div class="s4-item">
+            <div class="s4-item-list">
+              <img src="img/s4-1.png" alt="" />
+              <div class="s4-list-text">Собакам</div>
+            </div>
+            <div class="s4-item-list">
+              <img src="img/s4-2.png" alt="" />
+              <div class="s4-list-text">Мелким животным</div>
+            </div>
+            <div class="s4-item-list">
+              <img src="img/s4-3.png" alt="" />
+              <div class="s4-list-text">Кошкам</div>
+            </div>
+          </div>
+          <img class="gif" src="gif/2.gif" alt="" />
+          <div class="s4-footer">
+            <div class="s4-footer-textblock">
+              Наконец, вы сможете держать своего питомца красивым, не тратя
+              целое состояние на постоянные услуги по уходу!
+            </div>
+            <img class="img" src="img/s4-bg.png" alt="" />
+          </div>
+        </div>
+        <h3 class="two">Посмотрите видео!</h3>
+        <div class="video">
+          <div class="click-for-video">
+            <img src="img/s4.png" alt="" />
+          </div>
+          <div class="youtube">
+            <iframe class="youtube"></iframe>
+          </div>
+        </div>
+
+        <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+        <img class="img" src="img/s4-footer.jpg" alt="" />
+      </section>
+
+      <section class="s5">
+        <div class="container">
+          <h2>Награды триммера <span>PetClip</span></h2>
+          <div class="s5-item">
+            <div class="s5-item-textblock">
+              <span class="color-pink"> PetClip</span> – постоянный участник
+              популярных выставок и конференций.
+            </div>
+          </div>
+        </div>
+        <div class="s5-list">
+          <div class="s5-list-item">
+            <img src="img/s5-1.png" alt="" />
+            <p>Animal 2020</p>
+            <div class="s5-list-text">Штутгарт, Германия</div>
+          </div>
+          <div class="s5-list-item">
+            <img src="img/s5-2.png" alt="" />
+            <p>PetExpo 2020</p>
+            <div class="s5-list-text">Рига, Латвия</div>
+          </div>
+          <div class="s5-list-item">
+            <img src="img/s5-3.png" alt="" />
+            <p>Animals Days 2020</p>
+            <div class="s5-list-text">Варшава, Польша</div>
+          </div>
+        </div>
+        <div class="s5-footer">
+          <img class="img" src="img/s5-bg-2.png" alt="" />
+        </div>
+      </section>
+
+      <section class="s6">
+        <img class="img" src="img/s6-bg.jpg" alt="" />
+        <div class="container">
+          <div class="s6-topblock">
+            Если вы не довольны покупкой,
+            <b>у нас есть безрисковая 30-дневная гарантия,</b> которая
+            начинается только тогда, когда вы получаете продукт!
+          </div>
+          <h2>Что в <br /><span>коробке?</span></h2>
+          <div class="s6-item">
+            <img src="img/s6.png" alt="" />
+            <ul class="list">
+              <li>1 × PetClip</li>
+              <li>1 × USB кабель для зарядки</li>
+              <li>1 × щетка для чистки</li>
+              <li>4 × гребенчатые насадки (3-6-9-12мм)</li>
+              <li>1 × руководство пользователя</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="s8">
+        <div class="s8-text">
+          <img src="img/icon-warning.png" alt="" />
+          <p>
+            К сожалению,<span> в связи с высоким спросом,</span>
+            мы вынуждены ввести ограничение:
+          </p>
+          <p class="s8-text-fix">не более 2 штук в 1 руки!</p>
+          <div class="form-wrapper">
+            <div class="timer-cont">
+              <h3>Акция закончится через:</h3>
+              <div class="el-timer"></div>
+            </div>
+
+            <div class="container">
+              <!--Container-->
+
+              <form method="post">
+                <div class="price">
+                  <div class="price-old">
+                    <div>Обычная цена:</div>
+                    <span class="price-old-val oldproductsum"><s></s></span>
+                  </div>
+
+                  <div class="price-line"></div>
+
+                  <div class="price-new">
+                    <div>Цена по акции:</div>
+                    <span class="price-new-val productsum color-pink"></span>
+                  </div>
+                </div>
+                <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+                <div class="form-count">
+                  *количество товара по акции
+                  <span class="color-pink">ограниченно!</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="container"></div>
+        <img class="img" src="img/s8.jpg" alt="" />
+      </section>
+
+      <section class="s9">
+        <div class="container">
+          <h2>
+            Отзывы<br />
+           <span> покупателей</span>
+          </h2>
+        </div>
+        <div class="s9-item">
+          <div class="s9-item-list">
+            <img src="img/s9-1.jpg" alt="" />
+            <div class="s9-list-top">
+              <div class="s9-top-left">
+                <div class="name">Robert R.</div>
+                <div class="date">14/01/2021</div>
+              </div>
+              <div class="s9-stars">
+                <img src="img/icon-stars.png" alt="" />
+              </div>
+            </div>
+            <div class="s9-list-text">
+              Прекрасное приобретение на Рождество! Моя собака в восторге. Очень
+              удобный и простой триммер, а результат не хуже, чем в салоне!
+            </div>
+          </div>
+          <div class="s9-item-list">
+            <img src="img/s9-2.jpg" alt="" />
+            <div class="s9-list-top">
+              <div class="s9-top-left">
+                <div class="name">Robert R.</div>
+                <div class="date">14/01/2021</div>
+              </div>
+              <div class="s9-stars">
+                <img src="img/icon-stars.png" alt="" />
+              </div>
+            </div>
+            <div class="s9-list-text">
+              Мы с Шелли любим выглядеть на все 100%. Часто ходим в груминговые
+              салоны. Нас там уже все знают в округе. Недавно уже стали звонить,
+              беспокоиться, предлагать запись. Хаха! А мы теперь сами
+              справляемся и совсем не хуже! После того, как мой парень подарил
+              мне этот триммер, у меня освободилась куча времени. И Шелли
+              довольна, ведь у нее теперь больше времени на игры!
+            </div>
+          </div>
+          <div class="s9-item-list">
+            <img src="img/s9-3.jpg" alt="" />
+            <div class="s9-list-top">
+              <div class="s9-top-left">
+                <div class="name">Luci L.</div>
+                <div class="date">13.08.2020</div>
+              </div>
+              <div class="s9-stars">
+                <img src="img/icon-stars.png" alt="" />
+              </div>
+            </div>
+            <div class="s9-list-text">
+              Ой, я так довольна, и моя Пуговка так довольна! И мне так
+              понравилось стричь её, что я теперь никому её не доверю. Спасибо
+              Вам!
+            </div>
+          </div>
+          <div class="s9-item-list bottom">
+            <img src="img/s9-4.jpg" alt="" />
+            <div class="s9-list-top">
+              <div class="s9-top-left">
+                <div class="name">March M.</div>
+                <div class="date">| 13.08.2020.</div>
+              </div>
+              <div class="s9-stars">
+                <img src="img/icon-stars.png" alt="" />
+              </div>
+            </div>
+            <div class="s9-list-text">
+              У нас с мужем 2 йоркширских терьера с родословной - Макс и Марта.
+              Мы постоянные призеры и победители местных выставок, так что к
+              своему внешнему виду относимся серьезно. Одним из спонсоров
+              прошлой выставки стала компания Omeago. Победителю вручали
+              PetClip. Так мы и перестали ходить в груминг-салоны, и этим все
+              сказано.
+            </div>
+          </div>
+          <div class="s9-item-list bottom">
+            <img src="img/s9-5.jpg" alt="" />
+            <div class="s9-list-top">
+              <div class="s9-top-left">
+                <div class="name">Diana N.</div>
+                <div class="date">| 14.11.2020.</div>
+              </div>
+              <div class="s9-stars">
+                <img src="img/icon-stars.png" alt="" />
+              </div>
+            </div>
+            <div class="s9-list-text">
+              Я была приятно удивлена покупкой. Не думала, что уход за собакой
+              может быть таким простым. Раньше я боялась сама стричь, боялась
+              что испорчу все, или пораню. А этот триммер безопасный, длина
+              просто настраивается, бери и стриги. И больше никаких переплат!
+            </div>
+          </div>
+          <div class="s9-item-list bottom">
+            <img src="img/s9-6.jpg" alt="" />
+            <div class="s9-list-top">
+              <div class="s9-top-left">
+                <div class="name">Sergio B.</div>
+                <div class="date">| 18.10.2020</div>
+              </div>
+              <div class="s9-stars">
+                <img src="img/icon-stars.png" alt="" />
+              </div>
+            </div>
+            <div class="s9-list-text">
+              Хороший триммер. Уже не первый, но точно самый удачный. Быстро
+              заряжается, долго работает. Прост в использовании. Все, как я
+              люблю.
+            </div>
+          </div>
+        </div>
+        <img class="img" src="img/s9-bg.jpg" alt="">
+      </section>
+
+      <section class="s10">
+        <div class="container">
+          <h2>
+            Доставка <br>
+<span>и оплата</span>
+          </h2>
+
+          <div class="s10-item">
+            <div class="s10-item-list">
+              <div class="s10-img"><img src="img/s10-1.png" alt="" /></div>
+
+              <p>
+                Доставка почтой в течение 3-10 рабочих дней. Стоимость доставки товара от 350р.
+              </p>
+            </div>
+
+            <div class="s10-item-list">
+              <div class="s10-img"><img src="img/s10-2.png" alt="" /></div>
+              <p>
+                Оплата заказов <br>осуществляется по факту получения товара
+              </p>
+            </div>
+
+            <div class="s10-item-list">
+              <div class="s10-img"><img src="img/s10-3.png" alt="" /></div>
+              <p>
+                Мы всегда проверяем товар перед отправкой и гарантируем 100% качество
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s1">
+        <div class="s1-title">
+          <div class="s1-suptitle">Триммер для животных</div>
+          <h1>PetClip</h1>
+        </div>
+
+        <div class="sale-top">-50%</div>
+        <div class="sale-bottom">SALE!</div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-1.png" alt="" />
+            <p>Безопасно и удобно</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-2.png" alt="" />
+            <p>Быстрая и лёгкая стрижка</p>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-3.png" alt="" />
+            <p>Для всех животных!</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="form-wrapper">
+            <div class="timer-cont">
+              <h3>Акция закончится через:</h3>
+              <div class="el-timer"></div>
+            </div>
+
+            <div class="container">
+              <!--Container-->
+
+              <form method="post">
+                <div class="price">
+                  <div class="price-old">
+                    <div>Обычная цена:</div>
+                    <span class="price-old-val oldproductsum"><s></s></span>
+                  </div>
+
+                  <div class="price-line"></div>
+
+                  <div class="price-new">
+                    <div>Цена по акции:</div>
+                    <span class="price-new-val productsum color-pink"></span>
+                  </div>
+                </div>
+                <div class="form-item" id="form">
+                  <select
+                    name="country"
+                    class="countryselect form-control location"
+                  >
+                    <option selected value="RU">Россия</option>
+                    <option selected value="RU">Выберите вашу страну</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <input
+                    type="text"
+                    name="name"
+                    class="field form-control userneme"
+                    placeholder="Введите ваше имя"
+                    value=""
+                  />
+                </div>
+                <div class="form-item">
+                  <input
+                    type="text"
+                    name="phone"
+                    class="field form-control phone"
+                    placeholder="Введите ваш телефон"
+                    value=""
+                  />
+                </div>
+
+                <input
+                  type="hidden"
+                  name="productsum"
+                  class="productsum"
+                  value="1 руб."
+                />
+                <input type="hidden" name="delivery" value="0 руб." />
+                <input
+                  type="hidden"
+                  name="totalsum"
+                  class="productsum"
+                  value="1 руб."
+                />
+                <input type="hidden" name="user" value="1" />
+                <input
+                  type="hidden"
+                  name="address"
+                  value="Уточнить у покупателя"
+                />
+
+                <div class="reolader form-item">
+                  <button
+                    type="submit"
+                    class="form-btn mm_button"
+                    onclick="checkFields(event, this);"
+                  >
+                    Заказать сейчас
+                  </button>
+                  <div class="ajax_loader_block">
+                    <img
+                      class="ajax_loader"
+                      src="img/ajax-loader.gif"
+                      alt="Идет отправка данных"
+                    />
+                    <span class="ajax_loader">Идет отправка данных</span>
+                  </div>
+                </div>
+                <div class="form-count">
+                  *количество товара по акции
+                  <span class="color-pink">ограниченно!</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/TimeCircles.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+
+          return false;
+        });
+
+       
+
+        $(".click-for-video").click(function () {
+          this.style.display = "none";
+          $("div.youtube").css("display", "block");
+          $("iframe.youtube").prop("src", "video.mp4");
+        });
+        now = new Date();
+        var perem = (24 - now.getHours()) * 3600;
+        $(".el-timer").attr("data-timer", perem);
+        $(".el-timer").TimeCircles({
+          animation: "smooth",
+          text_size: 0.059,
+          bg_width: 0.902,
+          fg_width: 0.042,
+          use_background: true,
+          circle_bg_color: "#eaedf8",
+          time: {
+            Days: {
+              text: "Days",
+              color: "#e29317",
+              show: false,
+            },
+            Hours: {
+              text: "часов",
+              color: "#94ce30",
+              show: true,
+              circle_bg_color: "#000000",
+            },
+            Minutes: {
+              text: "минут",
+              color: "#94ce30",
+              show: true,
+            },
+            Seconds: {
+              text: "секунд",
+              color: "#94ce30",
+              show: true,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

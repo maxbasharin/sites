@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>Карманный металлоискатель</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/lt_landing_valid_form.js"></script>
+    <script type="text/javascript" src="js/lt_landing_script.js"></script>
+    <script type="text/javascript">
+      $jsonData = {
+        RU: {
+          currency: "\u0440\u0443\u0431.",
+          productsum: 1990,
+          oldproductsum: 39380,
+          delivery: 0,
+          totalsum: "1990",
+        },
+      };
+    </script>
+
+    <style>
+      .ajax_loader {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="s1">
+        <div class="s1-title">
+          <h1 >
+            <span class="s1-title-top">Карманный металлоискатель</span>
+          </h1>
+          <div class="s1-title-bottom">GP-Pointer</div>
+        </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-list-1.png" alt="" />
+            <div class="s1-list-text">Компактный и легкий</div>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-2.png" alt="" />
+            <div class="s1-list-text">Высокочувст вительный</div>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-3.png" alt="" />
+            <div class="s1-list-text">Водонепро ницаемый</div>
+          </div>
+        </div>
+
+        <div class="discount">
+          <div class="discount-top"><span>ХИТ</span> продаж</div>
+          <div class="discount-bottom">СКИДКА <span>50%</span></div>
+        </div>
+        <div class="s1-animation">
+  
+          <div class="slidewifi">
+            <img src="img/s1-slide.png">
+            <img src="img/s1-slide-2.png">
+            <img src="img/s1-slide-3.png">
+           
+        
+          </div>
+        
+        </div>
+        <div class="s1-present">Две китайские монеты <br> в подарок!</div>
+
+        <div class="form-wrapper">
+          <div class="price">
+            <div class="price-block">
+              <div class="price-text">Обычная цена:</div>
+              <div class="price-old">
+                <div class="price-old-val oldproductsum"></div>
+              </div>
+            </div>
+
+            <div class="price-discount">СКИДКА <span>50%</span></div>
+
+            <div class="price-block">
+              <div class="price-text">Новая цена:</div>
+              <div class="price-new">
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+          </div>
+          <div class="date-title">
+            акция действует до <span id="doc_date" class="timer-date"> </span>
+          </div>
+          <div class="container">
+            <form action="#" method="post" class="orderformcdn">
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option value="RU" selected disabled>Россия</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Ваше имя..."
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Ваш телефон..."
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  onclick="checkFields(event, this);"
+                >
+                  Заказать сейчас
+                </button>
+                <div class="ajax_loader_block">
+                  <img
+                    class="ajax_loader"
+                    src="img/ajax-loader.gif"
+                    alt="Идет отправка данных"
+                  />
+                  <span class="ajax_loader">Идет отправка данных</span>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="timer">
+            <div class="timer-title">До окончания акции осталось:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate">:</div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate">:</div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+            <div class="timer-footer">
+              <u>Политика конфиденциальности</u>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s2">
+        <h2>
+          Настоящая находка <br />
+          для кладоискателя!
+        </h2>
+        <div class="s2-item">
+          <div class="s2-item-list">
+            <img src="img/s2-1.png" alt="" />
+            <div class="s2-text">
+              GP-Pointer - это профессиональный металлоискатель, работающий как
+              с черными, так и с цветными металлами
+            </div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-2.png" alt="" />
+            <div class="s2-text">
+              Он может быть использован, как в сочетании с металлоискателем
+              наземного поиска, так и самостоятельно.
+            </div>
+          </div>
+          <div class="s2-item-list">
+            <img src="img/s2-3.png" alt="" />
+            <div class="s2-text">
+              GP pointer настроен так, что работает везде: от
+              высокоминерализованного грунта до насыщенного соленой водой песка!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s3">
+        <div class="s3-item">
+          <div class="s3-text">
+            Благодаря 360° сканированию и расстоянию обнаружения до 60 см вы не
+            упустите ни одно сокровище!
+          </div>
+          <img class="s3-gif" src="gif/1.gif" alt="" />
+          <div class="reolader form-item">
+            <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="s4">
+        <h2>Смотрите видео:</h2>
+        <iframe
+          width="480"
+          height="270"
+          src="https://www.youtube.com/embed/35cD4_St5Kc?start=35"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="s4-item">
+          <h3>Особенности металлодетектора</h3>
+          <div class="s4-item-list">
+            <img src="img/s4-1.png" alt="" />
+            <div class="s4-text">
+              Водонепроницаемый корпус позволяет погружать прибор в воду до 1,5
+              метров и защищает в любую погоду
+            </div>
+          </div>
+          <div class="s4-item-list">
+            <div class="s4-text">
+              Наличие светодиодного фонарика позволяет работать даже в темноте
+            </div>
+            <img src="img/s4-2.png" alt="" />
+          </div>
+          <div class="s4-item-list">
+            <img src="img/s4-3.png" alt="" />
+            <div class="s4-text">
+              3 режима работы: вибро, звук, и все вместе - настройте GP-pointer
+              под себя!
+            </div>
+          </div>
+        </div>
+
+        <div class="reolader form-item">
+          <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+        </div>
+      </section>
+
+      <div class="s5">
+        <div class="s5-slider">
+          <img src="img/s5-1.jpg" alt="" />
+          <img src="img/s5-2.jpg" alt="" />
+          <img src="img/s5-3.jpg" alt="" />
+          <img src="img/s5-4.jpg" alt="" />
+          <img src="img/s5-5.jpg" alt="" />
+        </div>
+      </div>
+
+      <section class="s6">
+        <div class="container">
+          <h2>Ни за что не потеряете!</h2>
+
+          <div class="s6-text">
+            В комплекте идут удобная кобура и зацепка-тренчик на пружине, что
+            гарантирует сохранность изделия даже в условиях напряженной работы.
+          </div>
+        </div>
+        <img src="gif/2.gif" alt="" />
+      </section>
+
+      <section class="s7">
+        <div class="container">
+          <h2>Характеристики</h2>
+          <ul class="list">
+            <li>Частота: 12 кГц</li>
+            <li>Диапазон температур: от 5 до 158°F (от-15 до + 70°C)</li>
+            <li>Режимы поиска: все металлические объекты</li>
+            <li>Сигнальная индикация цели, вибро режим (выбирается)</li>
+            <li>Поисковая катушка: 0,3 "/7,6 мм</li>
+            <li>Корпус: устойчивый к атмосферным воздействиям</li>
+            <li>Вес: 185 г</li>
+            <li>Длина: 10 дюймов/25 см</li>
+            <li>Батарейки: 1 шт 9 В</li>
+          </ul>
+        </div>
+        <div class="s7-item">
+          <div class="container">
+            <ul class="list">
+              <li>
+                Эффективная глубина обнаружения мелких предметов (монет): до 15
+                см.
+              </li>
+              <li>Предельная глубина: до 30 см.</li>
+              <li>Крупные предметы (массой 1 кг): до 60 см.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <h3>Комплектация</h3>
+          <ul class="list">
+            <li>Пинпоинтер GP Pointer 2 TRX/SHRXY — 1 шт.</li>
+            <li>Кобура для переноски — 1 шт.</li>
+            <li>Тренчик — 1 шт.</li>
+            <li>Инструкция пользователя — 1 шт.</li>
+            <li>Гарантийный талон — 1 шт.</li>
+            <li>Фирменная упаковка (коробка).</li>
+          </ul>
+        </div>
+        <div class="s7-text">
+          К сожалению, в связи с высоким <br />спросом, мы вынуждены ввести
+          ограничение: не более <br />3 металлоискателей в 1 руки!
+        </div>
+      </section>
+
+      <section class="s8">
+        <div class="form-wrapper">
+          <div class="price">
+            <div class="price-block">
+              <div class="price-text">Обычная цена:</div>
+              <div class="price-old">
+                <div class="price-old-val oldproductsum">3980 руб.</div>
+              </div>
+            </div>
+
+            <div class="price-discount">СКИДКА <span>50%</span></div>
+
+            <div class="price-block">
+              <div class="price-text">Новая цена:</div>
+              <div class="price-new">
+                <span class="price-new-val productsum">1990 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="date-title">
+            акция действует до <span id="doc_date-2" class="timer-date"> </span>
+          </div>
+
+          <div class="timer">
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate">:</div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate">:</div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="reolader form-item">
+              <a href="#form" class="form-btn mm_button"> Заказать сейчас </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s9">
+        <h2>Отзывы покупателей</h2>
+
+        <div class="s9-slider">
+          <div class="s9-block white-block">
+            <img class="s9-img" src="img/s9-1.jpg" alt="" />
+
+            <span class="block-name"> <b>Виктор, 41 год</b></span> <br />
+
+            <img class="s9-icon-img" src="img/icon-stars.png" alt="" />
+            <p>
+              Замечательный металлодетектор. Использую совместно с наземным.
+              Очень сильно упрощает работу. Можно точечно прозвонить участок и
+              не тратить время и силы на вскапывание. К тому же
+              водонепроницаемый, и в снег и в грязь можно использовать. Купил
+              полгода назад, никаких нареканий нет. Монет еще больше стал возить
+              домой. Смело рекомендую!
+            </p>
+          </div>
+          <div class="s9-block white-block">
+            <img class="s9-img" src="img/s9-2.jpg" alt="" />
+
+            <span class="block-name"> <b>Валерий, 37 лет</b></span> <br />
+
+            <img class="s9-icon-img" src="img/icon-stars.png" alt="" />
+
+            <p>
+              У меня были до этого компактные металлодетекторы, но GP-Pointer -
+              самый удачный. Он очень чувствителен, что сильно упрощает поиски и
+              сокращает время, и при этом как-то так настроен, что не реагирует
+              на помехи, типа высокоминерализованной почвы, например, в горах.
+              Таким образом, это отличное подспорье для кладоискателя. Я
+              доволен!
+            </p>
+          </div>
+          <div class="s9-block white-block">
+            <img class="s9-img" src="img/s9-3.jpg" alt="" />
+            <span class="block-name"> <b>Степан, 45 лет </b></span> <br />
+
+            <img class="s9-icon-img" src="img/icon-stars.png" alt="" />
+
+            <p>
+              До недавнего времени я вообще не пользовался маленькими
+              детекторами. Все наземным, но недавно получил в подарок
+              GP-Pointer. Работать стало значительно проще и удобнее. Кол-во
+              находок увеличилось, а затраты сил и времени уменьшились. Я и по
+              работе часто использую. Я - отделочник. Например, провод найти в
+              стене или арматуру. Рекомендую к покупке.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s10">
+        <h2>Как заказать товар?</h2>
+        <div class="s10-item">
+          <div class="s10-item-list">
+            <img src="img/s10-1.png" alt="" />
+            <div class="s10-text">
+              <span>ШАГ 1</span><br />
+              Оставьте заявку на заказ через форму ниже
+            </div>
+          </div>
+          <div class="s10-item-list">
+            <div class="s10-text">
+              <span>ШАГ 2</span><br />
+              Мы свяжемся с Вами для подтверждения заказа
+            </div>
+            <img src="img/s10-2.png" alt="" />
+          </div>
+          <div class="s10-item-list">
+            <img src="img/s10-3.png" alt="" />
+            <div class="s10-text">
+              <span>ШАГ 3</span><br />
+              Через несколько дней мы доставим вам товар
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s1 footer">
+        <div class="s1-title">
+          <h1>
+            <span class="s1-title-top">Карманный металлоискатель</span>
+          </h1>
+          <div class="s1-title-bottom">GP-Pointer</div>
+        </div>
+
+        <div class="s1-list">
+          <div class="s1-list-item">
+            <img src="img/s1-list-1.png" alt="" />
+            <div class="s1-list-text">Компактный и легкий</div>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-2.png" alt="" />
+            <div class="s1-list-text">Высокочувст вительный</div>
+          </div>
+          <div class="s1-list-item">
+            <img src="img/s1-list-3.png" alt="" />
+            <div class="s1-list-text">Водонепро ницаемый</div>
+          </div>
+        </div>
+
+        <div class="discount">
+          <div class="discount-top"><span>ХИТ</span> продаж</div>
+          <div class="discount-bottom">СКИДКА <span>50%</span></div>
+        </div>
+        <div class="s1-animation">
+  
+          <div class="slidewifi">
+            <img src="img/s1-slide.png">
+            <img src="img/s1-slide-2.png">
+            <img src="img/s1-slide-3.png">
+           
+        
+          </div>
+        
+        </div>
+        <div class="s1-present">Две китайские монеты <br> в подарок!</div>
+
+        <div class="form-wrapper">
+          <div class="price">
+            <div class="price-block">
+              <div class="price-text">Обычная цена:</div>
+              <div class="price-old">
+                <div class="price-old-val oldproductsum">3980 руб.</div>
+              </div>
+            </div>
+
+            <div class="price-discount">СКИДКА <span>50%</span></div>
+
+            <div class="price-block">
+              <div class="price-text">Новая цена:</div>
+              <div class="price-new">
+                <span class="price-new-val productsum">1990 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="date-title">
+            акция действует до <span id="doc_date-3" class="timer-date"> </span>
+          </div>
+          <div class="container">
+            <form action="#" method="post" class="orderformcdn" id="form">
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option value="RU" selected disabled>Россия</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Ваше имя..."
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Ваш телефон..."
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  onclick="checkFields(event, this);"
+                >
+                  Заказать сейчас
+                </button>
+                <div class="ajax_loader_block">
+                  <img
+                    class="ajax_loader"
+                    src="img/ajax-loader.gif"
+                    alt="Идет отправка данных"
+                  />
+                  <span class="ajax_loader">Идет отправка данных</span>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="timer">
+            <div class="timer-title">До окончания акции осталось:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Часов</div>
+              </div>
+              <div class="timer-separate">:</div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Минут</div>
+              </div>
+              <div class="timer-separate">:</div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">Секунд</div>
+              </div>
+            </div>
+            <div class="timer-footer">
+              <u>Политика конфиденциальности</u>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      function doc_date(value) {
+        if (value < 10) {
+          value = "0" + value;
+        }
+        return value;
+      }
+
+      function date_time() {
+        var current_datetime = new Date();
+        var day = doc_date(current_datetime.getDate());
+        var month = doc_date(current_datetime.getMonth() + 1);
+        var year = current_datetime.getFullYear();
+
+        return day + "." + month + "." + year;
+      }
+
+      document.getElementById("doc_date").innerHTML = date_time();
+      document.getElementById("doc_date-2").innerHTML = date_time();
+      document.getElementById("doc_date-3").innerHTML = date_time();
+    </script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+
+          return false;
+        });
+
+        $(".s5-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-icon_left" src="img/BTN_arrow_back.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right" src="img/BTN_arrow_next.png" alt="">',
+        });
+
+        $(".s9-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-icon_left-2" src="img/BTN_arrow_back.png" alt="">',
+          nextArrow:
+            '<img class="slider-icon_right-2" src="img/BTN_arrow_next.png" alt="">',
+        });
+
+        let filter = $("[data-filter]");
+
+        filter.on("click", function (event) {
+          event.preventDefault();
+
+          let cat = $(this).data("filter");
+
+          $("[data-cat]").each(function () {
+            let workCat = $(this).data("cat");
+
+            if (workCat != cat) {
+              $(this).removeClass("show");
+            } else {
+              $(this).addClass("show");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

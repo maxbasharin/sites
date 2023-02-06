@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Набор ножей SAMURA</title>
+
+  <link rel="stylesheet" href="css/style.min.css" />
+
+
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    .ajax_loader {
+      display: none;
+    }
+  </style>
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="s1 top">
+      <div class="s1-sale">
+        <p>-70% SALE</p>
+      </div>
+      <img src="img/icon-shape-mob.png" alt="" class="icon-shape-mob" />
+      <div class="container">
+        <div class="s1-block">
+          <div class="s1-top-header">
+            <div class="s1-logo">
+              <img src="img/icon-logo-mob.png" alt="" />
+            </div>
+            <div class="s1-top-header-text">Японские <br />кухонные ножи</div>
+          </div>
+          <div class="s1-title">
+            <div class="s1-title-top">
+              Станьте шеф-поваром на своей кухне!
+            </div>
+            <h1>
+              <span class="s1-subtitle">набор ножей</span>
+              <br />
+              <span class="s1-samura">samura</span>
+            </h1>
+          </div>
+
+          <ul class="s1-list list">
+            <li>Сверхпрочная сталь, не требующая заточки</li>
+            <li>Антибактериальное покрытие</li>
+            <li>Срок службы - 50 лет!</li>
+          </ul>
+
+          <div class="discount-top">
+            <div><img src="img/s1-icon-1.png" alt="" /></div>
+            <div>
+              Новинка<br />
+              2021 года
+            </div>
+          </div>
+          <div class="discount-bottom">
+            <div><img src="img/s1-icon-2.png" alt="" /></div>
+            <div>
+              Выбор<br />
+              35000 хозяек
+            </div>
+          </div>
+
+          <div class="s1-block-list">
+            <div class="s1-lists">
+              <img src="img/s1-list-1.png" alt="" />
+              <p>Сверхпрочная сталь</p>
+            </div>
+            <div class="s1-lists">
+              <img src="img/s1-list-2.png" alt="" />
+              <p>Антибактериальное покрытие</p>
+            </div>
+            <div class="s1-lists">
+              <img src="img/s1-list-3.png" alt="" />
+              <p>Срок службы - 50 лет!</p>
+            </div>
+          </div>
+
+          <div class="form-wrapper top">
+            <img class="icon-arrow" src="img/icon-arrow.png" alt="" />
+            <div class="icon-discount">
+              <div>Акция!</div>
+              <div class="num">-70%</div>
+              <div>скидка</div>
+            </div>
+            <div class="s1-form-discount">
+              Активирована скидка 70% по промокоду
+              <span class="color-orange">chef2021</span>
+            </div>
+            <div class="timer">
+              <div class="timer-title">До конца акции:</div>
+              <div class="countbox"></div>
+              <div class="timer-body">
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">ч</div>
+                </div>
+
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">м</div>
+                </div>
+
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">с</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price">
+              <div class="price-old">
+                <div>Обычная цена:</div>
+                <span class="price-old-val oldproductsum"><s>2490р.</s></span>
+              </div>
+
+              <div class="price-line"></div>
+
+              <div class="price-new">
+                <div>Цена по акции:</div>
+                <span class="price-new-val color-red productsum">1290р.</span>
+              </div>
+            </div>
+
+            <a href="#form" class="form-btn mm_button"> Сделать заказ </a>
+            <div class="limited">
+              <p>*количество товара по акции <span>ограничено</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="icon-broccoli" src="img/icon-broccoli.png" alt="" />
+      <div class="s1-price">
+        <p>
+          Профессиональная овощерезка
+          <span class="color-yellow">в подарок!</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="s2">
+      <div class="container">
+        <h2>Обычные кухонные ножи:</h2>
+
+        <div class="s2-item">
+          <div class="s2-item-list">
+            <img class="s2-img" src="img/s2-1.png" alt="" />
+            <img class="mob" src="img/s2-1-mob.png" alt="" />
+            <div class="s2-text">Могут резать только мягкие продукты</div>
+          </div>
+          <div class="s2-item-list">
+            <img class="s2-img" src="img/s2-2.png" alt="" />
+            <img class="mob" src="img/s2-2-mob.png" alt="" />
+            <div class="s2-text">
+              Сделаны из хрупких некачественных материалов
+            </div>
+          </div>
+          <div class="s2-item-list">
+            <img class="s2-img" src="img/s2-3.png" alt="" />
+            <img class="mob" src="img/s2-3-mob.png" alt="" />
+            <div class="s2-text">Являются причиной частых порезов и ран</div>
+          </div>
+          <div class="s2-item-list">
+            <img class="s2-img" src="img/s2-4.png" alt="" />
+            <img class="mob" src="img/s2-4-mob.png" alt="" />
+            <div class="s2-text">Пища липнет к лезвию</div>
+          </div>
+          <div class="s2-item-list">
+            <img class="s2-img" src="img/s2-5.png" alt="" />
+            <img class="mob" src="img/s2-5-mob.png" alt="" />
+            <div class="s2-text">Неудобно лежат в руке</div>
+          </div>
+          <div class="s2-item-list">
+            <img class="s2-img" src="img/s2-6.png" alt="" />
+            <img class="mob" src="img/s2-6-mob.png" alt="" />
+            <div class="s2-text footer">Лезвия быстро тупятся</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s3">
+      <div class="container">
+        <img class="icon-tomat-2" src="img/icon-tomat-2.png" alt="" />
+        <h2>Забудьте об этом навсегда!</h2>
+      </div>
+      <div class="s3-bg-mob-1">
+        <img class="s3-bg-mob-1" src="img/s3-bg-mob-1.png" alt="" />
+      </div>
+
+      <div class="container">
+        <div class="s3-item-top">
+          <p>
+            <span>Набор ножей SAMURA
+              <u>– это 5 профессиональных сверхострых ножей из японской
+                стали,</u></span>
+            которые станут незаменимым инструментом на Вашей кухне!
+          </p>
+        </div>
+        <img class="s3-item-bottom two" src="gif/0.gif" alt="" />
+        <div class="s3-item-middle">
+          С ними вы станете настоящим шеф-поваром и сможете моментально
+          нарубить зелень, мясо, овощи и фрукты — кусочки любой толщины готовы
+          через секунду. Ножи Samura удобно держать в руке за счет
+          эргономичной рукояти.
+        </div>
+
+        <img class="s3-item-bottom" src="gif/0.gif" alt="" />
+      </div>
+    </section>
+
+    <section class="s4">
+      <div class="container">
+        <h2>Набор «Samura» включает в себя 5 профессиональных ножей:</h2>
+        <div class="s4-item">
+          <div class="s4-item-list">
+            <div class="s4-item-gif">
+              <img class="s4-item-gif" src="gif/1.gif" alt="" />
+            </div>
+
+            <div class="s4-item-block">
+              <div class="s4-num">01</div>
+              <div class="s4-name">
+                <p>
+                  Шеф-нож
+                  <br />
+                  <span>Специально создан для нарезки мяса, птицы или рыбы.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="s4-item-list">
+            <div class="s4-item-gif">
+              <img class="s4-item-gif" src="gif/2.gif" alt="" />
+            </div>
+
+            <div class="s4-item-block">
+              <div class="s4-num">02</div>
+              <div class="s4-name">
+                <p>
+                  Нож для хлеба
+                  <br />
+                  <span>Быстро и легко нарежет хлеб без крошек и сломанных
+                    ломтиков любой толщины.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="s4-item-list">
+            <div class="s4-item-gif">
+              <img class="s4-item-gif" src="gif/3.gif" alt="" />
+            </div>
+
+            <div class="s4-item-block">
+              <div class="s4-num">03</div>
+              <div class="s4-name">
+                <p>
+                  Универсальный нож
+                  <br />
+                  <span>Идеален для женщин. Легчайшая нарезка и шинковка любых
+                    продуктов без каких-либо усилий.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="s4-item-list">
+            <div class="s4-item-gif">
+              <img class="s4-item-gif" src="gif/4.gif" alt="" />
+            </div>
+            <div class="s4-item-block">
+              <div class="s4-num">04</div>
+              <div class="s4-name">
+                <p>
+                  Нож для овощей
+                  <br />
+                  <span>Аккуратная нарезка любых овощей и фруктов на равные
+                    кусочки любого размера и толщины.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="s4-item-list">
+            <div class="s4-item-gif">
+              <img class="s4-item-gif" src="gif/5.gif" alt="" />
+            </div>
+
+            <div class="s4-item-block">
+              <div class="s4-num">05</div>
+              <div class="s4-name">
+                <p>
+                  Нож сантоку
+                  <br />
+                  <span>Идеально подходит для разрезания, крошения и рубки</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/icon-sausage.png" class="icon-sausage" alt="" />
+        <img src="img/icon-meet.png" class="icon-meet" alt="" />
+      </div>
+    </section>
+
+    <section class="s5">
+      <img class="s5-mob" src="img/s5-mob.png" alt="" />
+      <div class="container">
+        <h2>Преимущества ножей Samura:</h2>
+
+        <div class="s5-item">
+          <div class="s5-item-list">
+            <img src="img/s5-1.png" alt="" />
+            <div class="s5-text">50 лет без необходимости заточки</div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-2.png" alt="" />
+            <div class="s5-text">Эргономичная и ударопрочная ручка</div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-3.png" alt="" />
+            <div class="s5-text">
+              Антибактериальное нанопокрытие SilkBlade
+            </div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-4.png" alt="" />
+            <div class="s5-text">
+              Сделано в Японии по высочайшим стандартам
+            </div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-5.png" alt="" />
+            <div class="s5-text">Ультрапрочная нержавеющая сталь</div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-6.png" alt="" />
+            <div class="s5-text">Защита от случайных порезов</div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-7.png" alt="" />
+            <div class="s5-text">Гарантия производителя 15 лет</div>
+          </div>
+          <div class="s5-item-list">
+            <img src="img/s5-8.png" alt="" />
+            <div class="s5-text">Используется дамасская сталь</div>
+          </div>
+        </div>
+        <img class="icon-line" src="img/icon-line.png" alt="" />
+      </div>
+
+      <div class="s5-item-2">
+        <div class="container">
+          <div class="s5-item-left">
+            <h3>
+              Готовить – <br />
+              одно удовольствие!
+            </h3>
+
+            <div class="s5-item-text">
+              <p>
+                <span class="s5-subtitle">Ножи «Samura» </span>
+                <br />
+                <span class="s5-item-text-block">
+                  одним движением разрезают
+                </span>
+                <br />
+                <span class="s5-subtitle">
+                  куриную ножку, замороженное мясо и даже авокадо с
+                  косточкой!</span>
+              </p>
+            </div>
+          </div>
+          <div class="s5-item-right">
+            <iframe width="440" height="285" src="https://www.youtube.com/embed/0KKhIAGEH3I?start=55" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s6">
+      <div class="container">
+        <h2>
+          <span class="color-orange">Внимание !</span><br />
+          <span> Остерегайтесь подделок!</span>
+        </h2>
+        <div class="s6-item two">
+          <p>
+            <span>Осторожно! Подделки!</span>
+          </p>
+        </div>
+        <p class="s6-text">
+          Обратите внимание, что
+          <span> подделки изготовлены из некачественных материалов</span> и их
+          использование <span class="color-red">очень опасно!</span>
+        </p>
+        <div class="s6-item">
+          <p>
+            <span>Осторожно! Подделки!</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="s7">
+      <img class="icon-hum" src="img/icon-ham.png" alt="" />
+      <div class="container">
+        <h2>
+          Оригинальный <span>набор ножей Samura</span><br />
+          можно приобрести <span>только здесь</span> на официальном сайте!
+        </h2>
+        <div class="s7-item">
+          <div class="s7-item-list">
+            <img src="img/icon-set.png" alt="" />
+          </div>
+          <div class="s7-item-list-left">
+            <div class="s7-wrapper two">
+              <img src="img/icon-peeler.png" alt="" />
+              <p class="s7-text-price">
+                При покупке до конца акции -
+                <span class="color-yellow">профессиональная овощечистка в подарок!</span>
+              </p>
+            </div>
+            <div class="form-wrapper">
+              <div class="s7-wrapper">
+                <img src="img/icon-peeler.png" alt="" />
+                <p class="s7-text-price">
+                  При покупке до конца акции -
+                  <span class="color-yellow color-orange">профессиональная овощечистка в подарок!</span>
+                </p>
+              </div>
+
+              <div class="icon-discount">
+                <div>Акция!</div>
+                <div class="num">-70%</div>
+                <div>скидка</div>
+              </div>
+              <div class="s1-form-discount">
+                Активирована скидка 70% по промокоду
+                <span class="color-orange">chef2021</span>
+              </div>
+              <div class="timer">
+                <div class="timer-title">До конца акции:</div>
+                <div class="countbox"></div>
+                <div class="timer-body">
+                  <div class="timer-item">
+                    <div class="timer-val">
+                      <div class="timer-num">0</div>
+                      <div class="timer-num">0</div>
+                    </div>
+                    <div class="timer-name">ч</div>
+                  </div>
+
+                  <div class="timer-item">
+                    <div class="timer-val">
+                      <div class="timer-num">0</div>
+                      <div class="timer-num">0</div>
+                    </div>
+                    <div class="timer-name">м</div>
+                  </div>
+
+                  <div class="timer-item">
+                    <div class="timer-val">
+                      <div class="timer-num">0</div>
+                      <div class="timer-num">0</div>
+                    </div>
+                    <div class="timer-name">с</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price">
+                <div class="price-old">
+                  <div>Обычная цена:</div>
+                  <span class="price-old-val oldproductsum"><s>2490р.</s></span>
+                </div>
+
+                <div class="price-line"></div>
+
+                <div class="price-new">
+                  <div>Цена по акции:</div>
+                  <span class="price-new-val color-red productsum">1290р.</span>
+                </div>
+              </div>
+
+              <div class="s7-text-from">
+                <p>
+                  К сожалению, в связи с высоким спросом на набор ножей
+                  Samura, мы вынуждены ввести ограничение:
+                </p>
+                <p class="s7-text-from-2">не более 4 наборов в 1 руки!</p>
+              </div>
+
+              <a href="#form" class="form-btn mm_button">
+                Сделать заказ
+              </a>
+              <div class="limited">
+                <p>*количество товара по акции <span>ограничено</span></p>
+                <p class="limited-2">
+                  *цена действует на распродажу лимитированной партии 500шт.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s8">
+      <div class="container">
+        <div class="s8-suptitle">
+          Набор японских ножей Samura уже зарекомендовал себя в 18 странах
+          мира!
+        </div>
+        <h2>Теперь он доступен и в России!</h2>
+      </div>
+      <div class="s8-item">
+        <div class="s8-item-list">
+          <img src="img/s8-1.png" alt="" />
+          <div class="s8-text">
+            Победитель ресторанной выставки Gulfood 2020 в Берлине
+          </div>
+        </div>
+        <div class="s8-item-list">
+          <img src="img/s8-2.png" alt="" />
+          <div class="s8-text">
+            Номинант на премию "Товар года" на кулинарной выставке World
+            Olive Oil Exhibition (Мадрид, Испания)
+          </div>
+        </div>
+        <div class="s8-item-list">
+          <img src="img/s8-3.png" alt="" />
+          <div class="s8-text">
+            Контракты с лучшими мишленовскими ресторанами мирового уровня
+          </div>
+        </div>
+      </div>
+      <div class="container s8-desktop">
+        <div class="s8-item-footer">
+          <div class="s8-item-block">
+            <ul class="list">
+              <li><span>Лидер продаж</span> в США и Европе</li>
+              <li><span>Рекомендован</span> лучшими шеф-поварами мира</li>
+              <li>
+                <span>Победитель</span> 23 международных конкурсов и выставок
+              </li>
+            </ul>
+          </div>
+          <div class="s8-logo">
+            <img src="img/icon-logo.png" alt="" />
+          </div>
+          <img class="s8-knives" src="img/s8-knives.png" alt="" />
+        </div>
+        <img class="icon-peper_box" src="img/icon-peper_box.png" alt="" />
+      </div>
+      <div class="s8-item-mob">
+        <img class="s8-knives-mob" src="img/s8-knives.png" alt="">
+        <div class="s8-item-mob-item">
+
+          <ul class="list">
+            <li><span>Лидер продаж</span> в США и Европе</li>
+            <li><span>Рекомендован</span> лучшими шеф-поварами мира</li>
+            <li>
+              <span>Победитель</span> 23 международных конкурсов и выставок
+            </li>
+          </ul>
+        </div>
+        <div class="s8-item-mob-item">
+          <div class="s8-img">
+            <img src="img/s8-1-mob.png" alt="" />
+          </div>
+          <div class="s8-text">
+            <span>Победитель ресторанной выставки</span> Gulfood 2020 в Берлине
+          </div>
+        </div>
+        <div class="s8-item-mob-item">
+          <div class="s8-img">
+            <img src="img/s8-2-mob.png" alt="" />
+          </div>
+          <div class="s8-text">
+            <span> Номинант на премию "Товар года"</span> на кулинарной выставке World
+            Olive Oil Exhibition (Мадрид, Испания)
+          </div>
+        </div>
+        <div class="s8-item-mob-item">
+          <div class="s8-img">
+            <img src="img/s8-3-mob.png" alt="" />
+          </div>
+          <div class="s8-text">
+            <span>Контракты с лучшими мишленовскими ресторанами</span> мирового уровня
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s9">
+      <div class="container">
+        <h2>3 уникальных цвета на выбор</h2>
+        <div class="header__slider">
+          <div class="header__slider_item">
+            <img src="img/s9-3.png" alt="" />
+          </div>
+          <div class="header__slider_item">
+            <img src="img/s9-2.png" alt="" />
+          </div>
+          <div class="header__slider_item">
+            <img src="img/s9-1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="slider-dots">
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__title">
+                <div class="dots-box-circle"></div>
+                Шоколадный
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__title">
+                <div class="dots-box-circle"></div>
+                Черный
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__title">
+                <div class="dots-box-circle"></div>
+                Белый
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="s9-img" src="img/s9-bg.jpg" alt="">
+    </section>
+
+    <section class="s10">
+      <div class="container">
+        <h2>Мнение лучшего шеф-повара России:</h2>
+        <div class="s10-item">
+          <img class="s10-img" src="img/s10.png" alt="" />
+
+          <div class="s10-item-block">
+            <div class="s10-img-block">
+              <img class="s10-icon two" src="img/icon-signature.png" alt="" />
+              <img class="s10-img-mob" src="img/s10-mob.png" alt="" />
+              <img class="s10-mint two" src="img/icon-mint.png" alt="" />
+            </div>
+            <p>
+              «В своих ресторанах я использую только профессиональное
+              оборудование. Ведь качество блюд у меня на первом месте. Именно
+              поэтому
+              <span>во всех моих ресторанах повара используют только ножи фирмы
+                Samura.</span>
+            </p>
+
+            <p>
+              Ножи Samura изготовлены из ультрапрочной закалённой стали,
+              позволяющей без проблем работать с самыми разными продуктами: от
+              мягких овощей до замороженного мяса и костей. А благодаря
+              нанопокрытию SilkBlade <span>ножи</span>
+              <span class="color-red">никогда</span>
+              <span>не требуют заточки,</span>
+              оставаясь всегда идеально острыми!
+            </p>
+
+            <p>
+              <span>Это профессиональный инструмент,</span> проверено лично
+              мной за долгие годы!»
+            </p>
+            <img class="icon-points" src="img/icon-points.png" alt="" />
+            <p class="s10-footer">
+              <img class="s10-icon" src="img/icon-signature.png" alt="" />
+              <span class="s10-footer-2">Константин Ивлев</span>
+              <br />
+              Самый известный шеф-повар России, телеведущий, владелец
+              собственных ресторанов
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="img/icon-salt.png" class="icon-salt" alt="" />
+      <img src="img/icon-knife.png" class="icon-knife" alt="" />
+
+    </section>
+
+    <section class="s11">
+      <div class="container">
+        <h2>Характеристики ножей Samura:</h2>
+        <div class="s11-item">
+          <div class="s11-item-list two">
+            <img src="img/s11.png" alt="" />
+          </div>
+          <div class="s11-item-list">
+            <ul class="list">
+              <li>Твердость: 53+/- 2 HRC</li>
+              <li>Срок службы: 50 лет</li>
+              <li>Сталь: сверхпрочная дамасская</li>
+              <li>Нанопокрытие: SilkBlade</li>
+              <li>Гарантия: 15 лет от производителя</li>
+              <li>Возможность мыть в посудомоечной машине</li>
+              <li>Магнитные свойства</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s12">
+      <div class="container">
+        <h2>Отзывы наших покупателей</h2>
+
+        <div class="s12-slider">
+          <div class="s12-block">
+            <div class="block-img">
+              <img class="s12-img" src="img/s12-1.jpg" alt="" />
+            </div>
+
+            <div class="block-text">
+              <div class="block-text-top">
+                <div class="block-text-name">
+                  <div class="icon-human">
+                    <img src="img/icon-human.png" alt="" />
+                  </div>
+                  <p>
+                    <span>Юлия</span>
+                    <span>г. Москва</span>
+                  </p>
+                </div>
+
+                <div class="icon-stars">
+                  <img class="s12-icon-img" src="img/icon-stars.png" alt="" />
+                </div>
+              </div>
+
+              <p class="s12-text">
+                Как известно, для каждого продукта должен быть свой нож. Все
+                мои старые ножи были одинаковыми и я их часто путала: могла
+                резать одним ножом и мясо, и хлеб. А это, как все знают, может
+                быть очень вредно. Более того, ножи вечно тупились, если друг
+                случайно при нарезке заденешь лезвием какую-нибудь кость или
+                другой твердых предмет. Заказав набор SAMURA, я забыла про эти
+                проблемы навсегда - для каждого продукта свой нож, который не
+                спутаешь с другими, а металл такой качественный, что ему не
+                страшны никакие преграды: ни кости фруктов или мяса, ни
+                пластиковые бутылки, ни жестяные банки. Спасибо большое за
+                такой набор!
+              </p>
+            </div>
+          </div>
+          <div class="s12-block">
+            <div class="block-img">
+              <img class="s12-img" src="img/s12-2.jpg" alt="" />
+            </div>
+
+            <div class="block-text">
+              <div class="block-text-top">
+                <div class="block-text-name">
+                  <div class="icon-human">
+                    <img src="img/icon-human.png" alt="" />
+                  </div>
+                  <p>
+                    <span>Ольга </span>
+                    <span>г. Сочи</span>
+                  </p>
+                </div>
+
+                <div class="icon-stars">
+                  <img class="s12-icon-img" src="img/icon-stars.png" alt="" />
+                </div>
+              </div>
+
+              <p class="s12-text">
+                Всегда раздражало, когда ножи на кухне тупятся после 3-4 раз
+                использования. Заказала набор SAMURA и забыла что такое
+                точилка для ножей! Сами ножи супер острые, использую уже 2
+                месяца, а они все такие же острые, как из коробки! Спасибо за
+                этот прекрасный набор, теперь готовить - это одно
+                удовольствие!
+              </p>
+            </div>
+          </div>
+          <div class="s12-block">
+            <div class="block-img">
+              <img class="s12-img" src="img/s12-3.jpg" alt="" />
+            </div>
+
+            <div class="block-text">
+              <div class="block-text-top">
+                <div class="block-text-name">
+                  <div class="icon-human">
+                    <img src="img/icon-human.png" alt="" />
+                  </div>
+                  <p>
+                    <span>Олег </span>
+                    <span>г. Хабаровск</span>
+                  </p>
+                </div>
+
+                <div class="icon-stars">
+                  <img class="s12-icon-img" src="img/icon-stars.png" alt="" />
+                </div>
+              </div>
+
+              <p class="s12-text">
+                Работаю поваром в ресторане. Я как мужчина считаю, что если на
+                твоей кухне есть тупые ножи - ты не имеешь право называть себя
+                поваром. Заказав набор SAMURA я всегда уверен в остроте их
+                лезвия, а широкий выбор этих ножей позволяет быстро перейти с
+                нарезки мяса на нарезание овощей или хлеба, не тратя время на
+                мытье одного ножа. Спасибо за такой качественный инструмент,
+                теперь я буду советовать его всем своим коллегам.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="img/icon-mint.png" class="icon-mint" alt="" />
+      </div>
+    </section>
+
+    <section class="s13">
+      <div class="container">
+        <h2>Как сделать заказ?</h2>
+        <div class="s13-item">
+          <div class="s13-item-list">
+            <img class="s13-img" src="img/s13-1.png" alt="" />
+            <img src="img/icon-line-small.png" alt="" />
+            <p class="s13-text">
+              <span>Заявка</span>
+              <br />
+              Оставьте заявку на нашем сайте, заполнив форму заказа
+            </p>
+          </div>
+
+          <div class="s13-item-list">
+            <img class="s13-img" src="img/s13-2.png" alt="" />
+            <img src="img/icon-line-small.png" alt="" />
+            <p class="s13-text">
+              <span>Подтверждение</span>
+              <br />
+              Наш менеджер перезвонит вам для уточнения деталей и мы отправим
+              ваш товар
+            </p>
+          </div>
+
+          <div class="s13-item-list">
+            <img class="s13-img" src="img/s13-3.png" alt="" />
+            <img src="img/icon-line-small.png" alt="" />
+            <p class="s13-text">
+              <span>Получение</span>
+              <br />
+              Оплатите вашу посылку при получении на почте или у курьера
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="s14">
+      <div class="container">
+        <h2>Как сделать заказ?</h2>
+      </div>
+      <div class="s14-item">
+        <div class="s14-item-list">
+          <p>
+            <span>Заявка</span>
+            <br />
+            Оставьте заявку на нашем сайте, заполнив форму заказа
+          </p>
+        </div>
+
+        <div class="s14-item-list">
+          <p>
+            <span>Подтверждение</span> <br />Наш
+            менеджер перезвонит вам для уточнения деталей и мы отправим ваш
+            товар
+          </p>
+        </div>
+
+        <div class="s14-item-list">
+          <p>
+            <span>Получение</span> <br />
+            Оплатите вашу посылку при получении на почте или у курьера
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="s1 footer">
+      <div class="s1-sale">
+        <p>-70% SALE</p>
+      </div>
+      <img src="img/icon-shape-mob.png" alt="" class="icon-shape-mob" />
+      <div class="container">
+        <div class="s1-block">
+          <div class="s1-top-header">
+            <div class="s1-logo">
+              <img src="img/icon-logo-mob.png" alt="" />
+            </div>
+            <div class="s1-top-header-text">Японские <br />кухонные ножи</div>
+          </div>
+          <div class="s1-title">
+            <div class="s1-title-top">
+              Станьте шеф-поваром на своей кухне!
+            </div>
+            <h1>
+              <span class="s1-subtitle">набор ножей</span>
+              <br />
+              <span class="s1-samura">samura</span>
+            </h1>
+          </div>
+
+          <ul class="s1-list list">
+            <li>Сверхпрочная сталь, не требующая заточки</li>
+            <li>Антибактериальное покрытие</li>
+            <li>Срок службы - 50 лет!</li>
+          </ul>
+
+          <div class="discount-top">
+            <div><img src="img/s1-icon-1.png" alt="" /></div>
+            <div>
+              Новинка<br />
+              2021 года
+            </div>
+          </div>
+          <div class="discount-bottom">
+            <div><img src="img/s1-icon-2.png" alt="" /></div>
+            <div>
+              Выбор<br />
+              35000 хозяек
+            </div>
+          </div>
+
+          <div class="s1-block-list">
+            <div class="s1-lists">
+              <img src="img/s1-list-1.png" alt="" />
+              <p>Сверхпрочная сталь</p>
+            </div>
+            <div class="s1-lists">
+              <img src="img/s1-list-2.png" alt="" />
+              <p>Антибактериальное покрытие</p>
+            </div>
+            <div class="s1-lists">
+              <img src="img/s1-list-3.png" alt="" />
+              <p>Срок службы - 50 лет!</p>
+            </div>
+          </div>
+
+          <div class="form-wrapper top">
+            <img class="icon-arrow" src="img/icon-arrow.png" alt="" />
+            <div class="icon-discount">
+              <div>Акция!</div>
+              <div class="num">-70%</div>
+              <div>скидка</div>
+            </div>
+            <div class="s1-form-discount">
+              Активирована скидка 70% по промокоду
+              <span class="color-orange">chef2021</span>
+            </div>
+            <div class="timer">
+              <div class="timer-title">До конца акции:</div>
+              <div class="countbox"></div>
+              <div class="timer-body">
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">ч</div>
+                </div>
+
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">м</div>
+                </div>
+
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">с</div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="price">
+              <div class="price-old">
+                <div>Обычная цена:</div>
+                <span class="price-old-val oldproductsum"><s>2490р.</s></span>
+              </div>
+
+              <div class="price-line"></div>
+
+              <div class="price-new">
+                <div>Цена по акции:</div>
+                <span class="price-new-val color-red productsum">1290р.</span>
+              </div>
+            </div>
+            <form id="form">
+              <div class="s1-price">
+                <p>
+                  Профессиональная овощерезка
+                  <span class="color-yellow">в подарок!</span>
+                </p>
+              </div>
+              <select name="country" class="countryselect form-control location">
+                <option selected value="RU">Россия</option>
+                <option selected value="RU">Выберите вашу страну</option>
+              </select>
+
+              <div class="form-item">
+                <input type="text" name="name" class="field form-control userneme" placeholder="Введите ваше имя"
+                  value="" />
+              </div>
+              <div class="form-item">
+                <input type="text" name="phone" class="field form-control phone" placeholder="Введите ваш телефон"
+                  value="" />
+              </div>
+
+              <input type="hidden" name="productsum" class="productsum" value="1 руб." />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input type="hidden" name="totalsum" class="productsum" value="1 руб." />
+              <input type="hidden" name="user" value="1" />
+              <input type="hidden" name="address" value="Уточнить у покупателя" />
+
+              <div class="form-item">
+                <select name="color" class="countryselect form-control color">
+                  <option selected value="BR">Шоколадный</option>
+                  <option selected value="DR">Черный</option>
+                  <option selected value="WH">Белый</option>
+                  <option selected value="">Выберите цвет</option>
+                </select>
+              </div>
+
+              <div class="reolader form-item">
+                <button type="submit" class="form-btn mm_button" onclick="checkFields(event, this);">
+                  Заказать сейчас
+                </button>
+                <div class="ajax_loader_block">
+                  <img class="ajax_loader" src="img/ajax-loader.gif" alt="Идет отправка данных" />
+                  <span class="ajax_loader">Идет отправка данных</span>
+                </div>
+                <div class="limited">
+                  <p>*количество товара по акции <span>ограничено</span></p>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <script src="js/blazy.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/slick.min.css" />
+  <script>
+    window.addEventListener('scroll', e => {
+      document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
+    })
+  
+    $(function () {
+      CountBox();
+      $(".slider-arrows").html("");
+
+      $("a[href^='#']").click(function () {
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+
+        return false;
+      });
+
+      $(".header__slider").slick({
+        dots: false,
+        dotsClass: "slider_img-dots",
+
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+        asNavFor: ".slider-dots",
+        arrows: true,
+        prevArrow:
+          '<img class="slider-icon_left" src="img/BTN_arrow_back.png" alt="">',
+        nextArrow:
+          '<img class="slider-icon_right" src="img/BTN_arrow_next.png" alt="">',
+
+      });
+
+      $(".slider-dots").slick({
+        infinite: false,
+        vertical: true,
+        focusOnSelect: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        asNavFor: ".header__slider",
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              vertical: false,
+            },
+          },
+        ],
+      });
+
+      $(".s12-slider").slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        asNavFor: ".slider-dots",
+        arrows: true,
+        adaptiveHeight: true,
+        prevArrow:
+          '<img class="slider-icon_left-2" src="img/BTN_arrow_back.png" alt="">',
+        nextArrow:
+          '<img class="slider-icon_right-2" src="img/BTN_arrow_next.png" alt="">',
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              dots: true,
+              dotsClass: "slider-dots-2",
+            },
+          },
+        ],
+      });
+    });
+  </script>
+</body>
+
+</html>
